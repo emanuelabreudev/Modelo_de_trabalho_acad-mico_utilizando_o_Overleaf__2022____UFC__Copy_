@@ -1,0 +1,50 @@
+\chapter{Introdução}
+
+A Engenharia de Software tem enfrentado desafios crescentes relacionados à qualidade de uso dos sistemas desenvolvidos, especialmente em cenários caracterizados por desenvolvimento ágil, equipes distribuídas e ciclos curtos de entrega \cite{sommerville2011}. Nesse contexto, a usabilidade assume papel central, uma vez que influencia diretamente a eficácia, a eficiência e a satisfação dos usuários durante a interação com sistemas de software. De acordo com a norma ISO/IEC 25010, a usabilidade é definida como o grau em que um produto pode ser utilizado por usuários específicos para alcançar objetivos determinados com efetividade, eficiência e satisfação em um contexto de uso específico \cite{iso25010}.
+
+Apesar de sua reconhecida importância, aspectos de usabilidade ainda são frequentemente tratados de forma tardia no processo de desenvolvimento, sendo abordados apenas durante fases de avaliação ou testes finais. Tal prática tende a gerar retrabalho, aumento de custos e limitações estruturais para correção de problemas já incorporados à arquitetura do sistema \cite{juristo2007}. Estudos apontam que antecipar a consideração de requisitos de usabilidade nas fases iniciais do desenvolvimento contribui significativamente para a melhoria da qualidade do produto final \cite{carvajal2013}.
+
+No âmbito da Engenharia de Requisitos, a elicitação de requisitos de usabilidade permanece um desafio recorrente. Diferentemente de requisitos funcionais, esses requisitos envolvem aspectos subjetivos, dependentes do contexto e fortemente associados às características e preferências dos usuários, o que dificulta sua identificação e especificação explícita \cite{ardito2014}. Em ambientes ágeis, essa dificuldade é potencializada pelo foco em funcionalidades e pela informalidade dos artefatos de requisitos tradicionalmente utilizados.
+
+Com o objetivo de apoiar a elicitação e a especificação sistemática de requisitos de usabilidade em projetos ágeis, Oliveira Junior et al. (2020) propuseram o método USARP (\textit{Usability Requirements with Personas and User Stories}). O método integra o uso de \textit{personas}, \textit{user stories} e um conjunto de cartas baseadas em mecanismos de usabilidade, com o intuito de orientar discussões estruturadas e enriquecer requisitos funcionais com aspectos de usabilidade, ainda nas fases iniciais do desenvolvimento \cite{oliveirajr2020}.
+
+Embora estudos empíricos tenham indicado benefícios associados à aplicação do USARP, como aumento da efetividade na identificação de aspectos de usabilidade e apoio à tomada de decisão em equipes multidisciplinares \cite{marques2022}, ainda se observa uma lacuna na literatura quanto à síntese sistemática das evidências empíricas disponíveis sobre o método. Em especial, não está claro como os diferentes mecanismos propostos pelo USARP são efetivamente utilizados na prática, quais apresentam maior aderência em contextos reais e como a percepção positiva do método se relaciona com seu uso operacional.
+
+Além disso, os estudos existentes foram conduzidos em contextos variados, incluindo ambientes acadêmicos e industriais, bem como cenários presenciais e remotos, o que sugere a presença de heterogeneidade real na aplicação do método. No entanto, essa variabilidade ainda não foi analisada de forma integrada, dificultando a compreensão de padrões recorrentes de uso, limitações práticas e implicações para a adoção do USARP em diferentes cenários de desenvolvimento de software.
+
+Diante desse contexto, o objetivo deste trabalho é investigar empiricamente a aplicação do método USARP na elicitação de requisitos de usabilidade, por meio de uma meta-análise empírica de braço único baseada na síntese de evidências provenientes de contextos acadêmicos e industriais. Para alcançar esse objetivo, o estudo adota uma abordagem quantitativa e qualitativa, combinando análise estatística descritiva, técnicas de redução de dimensionalidade por meio da Análise de Componentes Principais (PCA) e análise qualitativa interpretativa. As análises são conduzidas em ambiente computacional, com apoio de ferramentas de ciência de dados, visando identificar padrões de uso, percepções recorrentes e informações latentes associadas à adoção do método USARP.
+
+Este trabalho está organizado da seguinte forma: o Capítulo 2 apresenta os objetIvos do estudo, detalhando o objetivo geral e os objetivos específicos. O Capítulo 3 apresenta a fundamentação teórica, discutindo conceitos de usabilidade, Engenharia de Requisitos, meta-análise empírica e técnicas de redução de dimensionalidade, como a Análise de Componentes Principais (PCA), com foco no método USARP. O Capítulo 4 descreve os trabalhos relacionados, contextualizando este estudo em relação à literatura existente. O Capítulo 5 descreve a metodologia adotada, detalhando o desenho da meta-análise empírica de braço único, os instrumentos de coleta de dados e as técnicas de análise utilizadas. O Capítulo 6 apresenta e discute os resultados obtidos a partir da síntese empírica realizada. Por fim, o Capítulo 7 traz as considerações finais, limitações do estudo e sugestões para trabalhos futuros.
+
+\chapter{Objetivos}
+
+\section{Objetivo Geral}
+
+Investigar empiricamente a aplicação do método USARP na elicitação de requisitos de usabilidade, por meio de uma meta-análise de braço único baseada na síntese de evidências provenientes de contextos acadêmicos e industriais.
+
+\section{Objetivos Específicos}
+
+\begin{itemize}
+    \item Sintetizar evidências empíricas sobre a percepção de utilidade, produtividade e eficácia associadas ao uso do USARP;
+    \item Apresentar uma caracterização do uso efetivo dos mecanismos de usabilidade propostos pelo método, destacando padrões de recorrência e subutilização;
+    \item Evidenciar diferenças e semelhanças entre contextos acadêmicos e industriais quanto à aplicação do método USARP;
+    \item Extrair informações latentes associadas à aplicação do método por meio de técnicas de redução de dimensionalidade, como a Análise de Componentes Principais (PCA);
+    \item Discutir implicações práticas e limitações do método com base nos resultados empíricos sintetizados.
+\end{itemize}
+
+
+
+%Testando o símbolo $\symE$
+
+%\lipsum[5]  % Simulador de texto, ou seja, é um gerador de lero-lero.
+
+%	\begin{alineas}
+%		\item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dictum sed tortor nec viverra.
+%		\item Praesent vitae nulla varius, pulvinar quam at, dapibus nisi. Aenean in commodo tellus. Mauris molestie est sed justo malesuada, quis feugiat tellus venenatis.
+%		\item Praesent quis erat eleifend, lacinia turpis in, tristique tellus. Nunc dictum sed tortor nec viverra.
+%		\item Mauris facilisis odio eu ornare tempor. Nunc dictum sed tortor nec viverra.
+%		\item Curabitur convallis odio at eros consequat pretium.
+%	\end{alineas}
+	
+
+	

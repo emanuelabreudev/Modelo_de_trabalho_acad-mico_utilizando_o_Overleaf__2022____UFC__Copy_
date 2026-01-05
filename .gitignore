@@ -1,0 +1,77 @@
+# --------------------------
+# Artefatos gerados pelo LaTeX
+# --------------------------
+*.aux
+*.log
+*.toc
+*.out
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.nav
+*.snm
+*.vrb
+*.idx
+*.ilg
+*.ind
+*.glo
+*.gls
+*.ist
+*.glsdefs
+*.blg
+*.bbl
+*.run.xml
+*.bcf
+
+# --------------------------
+# PDFs e arquivos gerados (opcional)
+# --------------------------
+# Ignora todos os PDFs (comente se quiser subir o PDF final)
+*.pdf
+
+# Se quiser manter um PDF final específico, por exemplo "documento.pdf",
+# use (descomente a linha abaixo e comente a linha *.pdf acima):
+# !/documento.pdf
+
+# --------------------------
+# Pastas de build/temp
+# --------------------------
+build/
+out/
+_build/
+dist/
+
+# --------------------------
+# Backups e temporários de editores
+# --------------------------
+*~
+*.bak
+*.backup
+*.swp
+*.swo
+*.orig
+*.tex~*
+.#*
+*.log~
+*.aux~
+
+# --------------------------
+# Arquivos e pastas do sistema / IDE
+# --------------------------
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --------------------------
+# Se usar minted (Python) e caches
+# --------------------------
+_minted-*/
+pygmentize-cache/
+
+# --------------------------
+# Git LFS pointer files (se usar LFS)
+# --------------------------
+*.gitattributes

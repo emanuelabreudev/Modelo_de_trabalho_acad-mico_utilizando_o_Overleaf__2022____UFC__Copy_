@@ -1,0 +1,1 @@
+{"key":"build_command","value":["latexmk","-pdf","-f","-g","-bibtex","-deps","-synctex=1","-interaction=nonstopmode","-output-directory=/tmp/387f442535a2d9bda58b563c3275cd2975b9badd","trabalhos-relacionados.tex"]}

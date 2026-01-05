@@ -1,0 +1,1 @@
+{"key":"build_command","value":["latexmk","-pdf","-f","-g","-bibtex","-deps","-synctex=1","-interaction=nonstopmode","-output-directory=/tmp/22de59b74eead09df70fa47e9fbaa1fb2a73c654","epigrafe.tex"]}

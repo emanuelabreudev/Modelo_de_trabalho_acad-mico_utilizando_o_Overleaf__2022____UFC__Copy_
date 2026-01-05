@@ -1,0 +1,68 @@
+\chapter{Fundamentação Teórica}
+\label{cap:fundamentacao-teorica}
+
+Este capítulo apresenta os fundamentos teóricos que sustentam a investigação conduzida neste trabalho. Diferentemente da Introdução, que contextualiza o problema e delimita os objetivos da pesquisa, a fundamentação teórica aprofunda os conceitos, métodos e abordagens científicas que embasam a análise do método USARP e a estratégia empírica adotada. Inicialmente, discute-se o papel da usabilidade na Engenharia de Software e sua relação com a qualidade de sistemas interativos. Em seguida, aborda-se a Engenharia de Requisitos com ênfase na elicitação de requisitos de usabilidade. Posteriormente, o método USARP é detalhado de forma aprofundada, incluindo seus fundamentos conceituais, estrutura operacional e evolução. Por fim, são apresentados os fundamentos da meta-análise empírica de braço único e da Análise de Componentes Principais (PCA), técnicas utilizadas para a síntese e interpretação dos dados empíricos deste estudo.
+
+\section{Usabilidade na Engenharia de Software}
+
+A usabilidade é reconhecida como um atributo central da qualidade de software, especialmente em sistemas interativos. De acordo com a norma ISO/IEC 25010, a usabilidade refere-se ao grau em que um sistema pode ser utilizado por usuários específicos para atingir objetivos definidos com eficácia, eficiência e satisfação, considerando um contexto de uso específico \cite{iso25010}. Essa definição evidencia que a usabilidade não se restringe à interface gráfica, mas envolve aspectos relacionados ao comportamento do sistema, às funcionalidades disponibilizadas e à forma como o usuário interage com essas funcionalidades ao longo do tempo.
+
+Na Engenharia de Software, a usabilidade passou a ser compreendida como um fator estratégico para o sucesso de produtos digitais. Estudos clássicos demonstram que sistemas com baixa usabilidade tendem a apresentar maior taxa de erros operacionais, baixa aceitação por parte dos usuários e aumento nos custos de suporte e manutenção \cite{nielsen1993}. Além disso, decisões de projeto tomadas nas fases iniciais do desenvolvimento exercem influência direta sobre a experiência do usuário e sobre a sustentabilidade do sistema ao longo de seu ciclo de vida \cite{preece2015}.
+
+Apesar desse reconhecimento, a usabilidade ainda é frequentemente tratada de forma tardia no processo de desenvolvimento, sendo avaliada apenas em fases finais, geralmente associadas a testes de interface ou validação com usuários. Essa abordagem corretiva limita a capacidade de resolver problemas estruturais de uso, uma vez que ajustes realizados após a implementação tendem a demandar maior esforço, custo e retrabalho \cite{juristo2007}.
+
+\section{Engenharia de Requisitos e Requisitos de Usabilidade}
+
+A Engenharia de Requisitos compreende um conjunto de atividades voltadas à identificação, análise, documentação e gerenciamento dos requisitos de um sistema, com o objetivo de garantir que o software atenda às necessidades reais de seus usuários e demais stakeholders \cite{sommerville2011}. Tradicionalmente, os requisitos são classificados em funcionais e não funcionais. Os requisitos de usabilidade são, em geral, enquadrados como requisitos não funcionais; contudo, essa classificação tem se mostrado insuficiente para representar adequadamente seu impacto no sistema.
+
+Requisitos de usabilidade apresentam características particulares que dificultam sua elicitação e especificação. Eles são frequentemente subjetivos, dependentes do contexto de uso e fortemente influenciados por fatores humanos, como expectativas, experiência prévia e limitações cognitivas dos usuários \cite{ardito2014}. Além disso, muitos aspectos de usabilidade manifestam-se por meio de comportamentos funcionais do sistema, afetando diretamente o design e a arquitetura do software.
+
+Nesse contexto, Juristo, Moreno e Sánchez-Segura propuseram o conceito de \textit{Functional Usability Features} (FUFs), defendendo que determinados aspectos de usabilidade devem ser tratados como funcionalidades explícitas do sistema \cite{juristo2007}. As FUFs são decompostas em mecanismos de usabilidade, como feedback, prevenção de erros, alertas, desfazer ações e ajuda multinível, que podem ser especificados como requisitos verificáveis e rastreáveis. Essa abordagem reforça a necessidade de considerar a usabilidade desde a fase de elicitação de requisitos, integrando-a às decisões técnicas e funcionais do sistema.
+
+\section{O Método USARP}
+
+O método USARP (\textit{Usability Requirements with Personas and User Stories}) foi proposto com o objetivo de apoiar a elicitação e a especificação sistemática de requisitos de usabilidade em fases iniciais do desenvolvimento de software, especialmente em contextos ágeis \cite{oliveirajr2020}. O método surge da constatação de que, embora existam diretrizes e recomendações de usabilidade bem estabelecidas, há uma lacuna prática quanto à sua incorporação efetiva durante a elicitação de requisitos, sobretudo por equipes não especialistas em usabilidade.
+
+O USARP fundamenta-se na integração de três elementos principais: \textit{personas}, \textit{user stories} e mecanismos de usabilidade derivados das \textit{Functional Usability Features}. As \textit{personas} são utilizadas para representar perfis de usuários reais, considerando suas características, necessidades, objetivos e limitações. As \textit{user stories} oferecem um formato simples e amplamente adotado no desenvolvimento ágil para a especificação de requisitos sob a perspectiva do usuário. Os mecanismos de usabilidade atuam como guias estruturados que direcionam a reflexão sobre aspectos funcionais relacionados à qualidade de uso.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\textwidth]{figuras/cartas_mecanismos.png}
+    \caption{Exemplos de cartas de mecanismos de usabilidade do método USARP}
+    \label{fig:cartas-mecanismos-usarp}
+    \Fonte{Elaborado pelo autor (2025), com base em Oliveira Junior et al. (2020).}
+\end{figure}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\textwidth]{figuras/cartas_requisitos.png}
+    \caption{Exemplos de cartas de requisitos de usabilidade do método USARP}
+    \label{fig:cartas-requisitos-usarp}
+    \Fonte{Elaborado pelo autor (2025), com base em Oliveira Junior et al. (2020).}
+\end{figure}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\textwidth]{figuras/cartas_prototipação.png}
+    \caption{Exemplos de cartas de prototipação do método USARP}
+    \label{fig:cartas-prototipação-usarp}
+    \Fonte{Elaborado pelo autor (2025), com base em Oliveira Junior et al. (2020).}
+\end{figure}
+
+\FloatBarrier
+
+O método propõe um processo estruturado que se inicia com a criação de \textit{personas}, segue pela extração de requisitos potenciais e culmina na escrita e no enriquecimento de \textit{user stories} com mecanismos de usabilidade explícitos. Essa abordagem permite que aspectos de usabilidade sejam discutidos, negociados e documentados de forma sistemática, reduzindo a dependência de especialistas e promovendo maior conscientização da equipe de desenvolvimento.
+
+Estudos empíricos indicam que o USARP é eficaz na obtenção de requisitos de usabilidade, embora também evidenciem desafios relacionados à carga cognitiva imposta por alguns mecanismos e à necessidade de maior direcionamento no uso dos artefatos \cite{marques2022}. Esses resultados motivaram a evolução do método, incluindo a transformação dos mecanismos de usabilidade em cartas, com o objetivo de tornar o processo mais dinâmico, acessível e colaborativo.
+
+
+\section{Meta-análise Empírica em Engenharia de Software}
+
+A meta-análise é uma técnica estatística voltada à síntese quantitativa de resultados provenientes de múltiplos estudos independentes. Originalmente desenvolvida na área da saúde, a meta-análise tem sido progressivamente adotada na Engenharia de Software Empírica como forma de consolidar evidências científicas em cenários caracterizados por heterogeneidade de contextos e métodos \cite{kitchenham2009}.
+
+Em situações nas quais não há grupos de comparação direta, como na avaliação de um único método ou abordagem, emprega-se a meta-análise de braço único. Nesse tipo de análise, são sintetizadas medidas como médias, proporções ou frequências associadas a um único tratamento ou intervenção \cite{rodrigues2010}. Na Engenharia de Software, abordagens de síntese empírica semelhantes têm sido amplamente utilizadas para consolidar evidências provenientes de estudos conduzidos em contextos distintos, permitindo a identificação de padrões recorrentes e a análise de variabilidade entre ambientes de aplicação.
+
+Kitchenham et al. \cite{kitchenham2009} destacam as revisões sistemáticas e meta-análises como estratégias metodológicas fundamentais para a consolidação de evidências empíricas na Engenharia de Software. Segundo os autores, essas abordagens permitem identificar, avaliar criticamente e sintetizar resultados de múltiplos estudos primários por meio de protocolos explícitos e reprodutíveis, reduzindo vieses e aumentando a confiabilidade das conclusões, especialmente em áreas caracterizadas por elevada heterogeneidade metodológica e contextual. Quando os dados disponíveis são comparáveis, a meta-análise possibilita a agregação estatística de medidas como médias, proporções e frequências, oferecendo uma visão quantitativa integrada sobre a efetividade de métodos e práticas.
+
+De forma complementar, Runeson et al. \cite{runeson2012} discutem a aplicação de estudos de caso empíricos como uma abordagem essencial para compreender a adoção, o uso e a efetividade de métodos de desenvolvimento de software em contextos reais. Os autores descrevem como estudos de caso, conduzidos em ambientes acadêmicos e industriais, permitem analisar fenômenos complexos a partir de múltiplas fontes de evidência, como questionários, entrevistas, observação direta e análise de artefatos. Além disso, a condução de estudos de caso múltiplos possibilita a comparação entre contextos distintos, fortalecendo a validade externa dos resultados e contribuindo para uma compreensão mais aprofundada das condições nas quais um método é efetivamente utilizado.
+
+Nesse contexto, a meta-análise empírica de braço único mostra-se particularmente adequada para investigar padrões de uso, percepção e adoção de métodos de Engenharia de Software, como o USARP, em diferentes contextos acadêmicos e industriais. Como suporte à interpretação dos dados sintetizados, técnicas estatísticas exploratórias podem ser empregadas de forma complementar, a exemplo da Análise de Componentes Principais (PCA), que auxilia na identificação de estruturas latentes e relações subjacentes entre variáveis observadas, sendo detalhada posteriormente na seção metodológica deste trabalho.
+
