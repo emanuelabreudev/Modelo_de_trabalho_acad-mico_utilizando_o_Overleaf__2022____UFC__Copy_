@@ -271,35 +271,35 @@
 	\input{2-textuais/2-fundamentacao-teorica}
 	\input{2-textuais/trabalhos-relacionados}
 	\input{2-textuais/3-metodologia}
-	\input{2-textuais/4-resultados}
-	\input{2-textuais/5-conclusao}
+	% \input{2-textuais/4-resultados}
+	% \input{2-textuais/5-conclusao}
 	
 	%Elementos pós-textuais	
 	\bibliography{3-pos-textuais/referencias}
 %	\imprimirglossario %	
 
 % --- Fallback seguro caso \imprimirpaginaapendices não exista ---
-\makeatletter
-\providecommand{\imprimirpaginaapendices}{%
-  \clearpage % ou \cleardoublepage se preferir começar em página ímpar
-  \phantomsection
-  \addcontentsline{toc}{chapter}{Apêndices}%
-  \chapter*{Apêndices}%
-}
-\makeatother
-% --------------------------------------------------------------
+% \makeatletter
+% \providecommand{\imprimirpaginaapendices}{%
+%   \clearpage % ou \cleardoublepage se preferir começar em página ímpar
+%   \phantomsection
+%   \addcontentsline{toc}{chapter}{Apêndices}%
+%   \chapter*{Apêndices}%
+% }
+% \makeatother
+% % --------------------------------------------------------------
 
-	\imprimirapendices
-		% Adicione aqui os apendices do seu trabalho
-		\input{3-pos-textuais/apendices/apendice-a}
-		\input{3-pos-textuais/apendices/apendice-b}
-		\input{3-pos-textuais/apendices/apendice-c}
+% 	\imprimirapendices
+% 		% Adicione aqui os apendices do seu trabalho
+% 		\input{3-pos-textuais/apendices/apendice-a}
+% 		\input{3-pos-textuais/apendices/apendice-b}
+% 		\input{3-pos-textuais/apendices/apendice-c}
 		
-		%\imprimiranexos
-		% Adicione aqui os anexos do seu trabalho
-		\input{3-pos-textuais/anexos/anexo-a}
-		\input{3-pos-textuais/anexos/anexo-b}		
-    %\imprimirindice
+% 		%\imprimiranexos
+% 		% Adicione aqui os anexos do seu trabalho
+% 		\input{3-pos-textuais/anexos/anexo-a}
+% 		\input{3-pos-textuais/anexos/anexo-b}		
+%     %\imprimirindice
     
 	
 
