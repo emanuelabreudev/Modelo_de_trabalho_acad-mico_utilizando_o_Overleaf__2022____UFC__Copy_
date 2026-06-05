@@ -9,62 +9,64 @@ Federal do Ceará, priorizando trabalhos que abordam usabilidade, requisitos nã
 
 \section{Métodos para Elicitação de Requisitos de Usabilidade}
 
-Juristo, Moreno e Sánchez-Segura propuseram um conjunto de diretrizes para elicitação de funcionalidades de usabilidade, introduzindo o conceito de \textit{Functional Usability Features} (FUFs), que defende a incorporação de aspectos de usabilidade como funcionalidades explícitas do sistema \cite{juristo2007}. Embora o trabalho represente um avanço conceitual importante ao tratar a usabilidade como parte do comportamento funcional do software, sua abordagem é fortemente orientada a documentação tradicional de requisitos, o que dificulta sua adoção em ambientes ágeis baseados em artefatos leves.
+\citeonline{juristo2007} propuseram um conjunto de diretrizes para elicitação de funcionalidades de usabilidade, introduzindo o conceito de \textit{Functional Usability Features} (FUFs), que defende a incorporação de aspectos de usabilidade como funcionalidades explícitas do sistema. Embora o trabalho represente um avanço conceitual importante ao tratar a usabilidade como parte do comportamento funcional do software, sua abordagem é fortemente orientada a documentação tradicional de requisitos, o que dificulta sua adoção em ambientes ágeis baseados em artefatos leves.
 
-Moreno e Yagüe exploraram a integração das FUFs com \textit{user stories}, investigando como mecanismos de usabilidade podem influenciar a criação, modificação ou refinamento de histórias de usuário e critérios de aceitação \cite{moreno2012}. Apesar dos resultados positivos, o estudo concentra-se predominantemente na fase de especificação, não oferecendo um processo estruturado para a elicitação sistemática dos requisitos de usabilidade a partir das características dos usuários.
+\citeonline{moreno2012} exploraram a integração das FUFs com \textit{user stories}, investigando como mecanismos de usabilidade podem influenciar a criação, modificação ou refinamento de histórias de usuário e critérios de aceitação. Apesar dos resultados positivos, o estudo concentra-se predominantemente na fase de especificação, não oferecendo um processo estruturado para a elicitação sistemática dos requisitos de usabilidade a partir das características dos usuários.
 
-Choma et al. propuseram a abordagem \textit{UserX Story}, que incorpora aspectos de Experiência do Usuário (UX) à escrita de \textit{user stories} por meio do uso de \textit{personas} e das heurísticas de Nielsen \cite{choma2016}. Nessa abordagem, as heurísticas são utilizadas principalmente como base para critérios de aceitação. Embora a proposta contribua para aproximar UX e métodos ágeis, ela trata a usabilidade como requisito não funcional e foca majoritariamente em aspectos de interface, não explorando seu impacto funcional ou arquitetural.
+\citeonline{choma2016} propuseram a abordagem \textit{UserX Story}, que incorpora aspectos de Experiência do Usuário (UX) à escrita de \textit{user stories} por meio do uso de \textit{personas} e das heurísticas de Nielsen. Nessa abordagem, as heurísticas são utilizadas principalmente como base para critérios de aceitação. Embora a proposta contribua para aproximar UX e métodos ágeis, ela trata a usabilidade como requisito não funcional e foca majoritariamente em aspectos de interface, não explorando seu impacto funcional ou arquitetural.
 
 \section{Abordagens Baseadas em Personas e Prototipação}
 
-Ferreira et al. propuseram a técnica PATHY, voltada à criação de \textit{personas} com foco na identificação de requisitos potenciais de software \cite{ferreira2018}. A técnica se mostrou eficaz para compreender o perfil dos usuários e suas necessidades, porém não é direcionada especificamente à elicitação de requisitos de usabilidade, exigindo sua combinação com outras abordagens para esse fim.
+\citeonline{ferreira2018} propuseram a técnica PATHY, voltada à criação de \textit{personas} com foco na identificação de requisitos potenciais de software. A técnica se mostrou eficaz para compreender o perfil dos usuários e suas necessidades, porém não é direcionada especificamente à elicitação de requisitos de usabilidade, exigindo sua combinação com outras abordagens para esse fim.
 
-Outros estudos investigaram processos que combinam elicitação de requisitos e prototipação. Teixeira et al. apresentaram uma metodologia aplicada ao domínio da saúde, na qual protótipos são utilizados como mediadores para validação iterativa de requisitos \cite{teixeira2014}. Apesar de evidenciar benefícios práticos, o foco do estudo não está na usabilidade como requisito sistematicamente elicitado, mas na aceitação da solução pelos usuários finais.
+Outros estudos investigaram processos que combinam elicitação de requisitos e prototipação. \citeonline{teixeira2014} apresentaram uma metodologia aplicada ao domínio da saúde, na qual protótipos são utilizados como mediadores para validação iterativa de requisitos. Apesar de evidenciar benefícios práticos, o foco do estudo não está na usabilidade como requisito sistematicamente elicitado, mas na aceitação da solução pelos usuários finais.
 
-Gonçalves e Rocha propuseram um processo metodológico baseado em normas internacionais para o desenvolvimento de interfaces inteligentes, integrando práticas de IHC ao ciclo de vida do software \cite{goncalves2019}. O trabalho destaca a importância da usabilidade, porém carece de evidências empíricas de aplicação contínua em contextos reais de desenvolvimento.
+\citeonline{goncalves2019} propuseram um processo metodológico baseado em normas internacionais para o desenvolvimento de interfaces inteligentes, integrando práticas de IHC ao ciclo de vida do software. O trabalho destaca a importância da usabilidade, porém carece de evidências empíricas de aplicação contínua em contextos reais de desenvolvimento.
 
 \section{O Método USARP e Evidências Empíricas}
 
-O método USARP foi proposto por Oliveira Junior et al. com o objetivo de apoiar a elicitação e especificação de requisitos de usabilidade em fases iniciais do desenvolvimento, integrando \textit{personas}, \textit{user stories} e mecanismos de usabilidade derivados das FUFs \cite{oliveirajr2020}. Diferentemente de abordagens anteriores, o USARP oferece um processo estruturado que conecta explicitamente características dos usuários aos requisitos de usabilidade, promovendo discussões colaborativas entre membros da equipe.
+O método USARP foi proposto por \citeonline{oliveirajr2020} com o objetivo de apoiar a elicitação e especificação de requisitos de usabilidade em fases iniciais do desenvolvimento, integrando \textit{personas}, \textit{user stories} e mecanismos de usabilidade derivados das FUFs. Diferentemente de abordagens anteriores, o USARP oferece um processo estruturado que conecta explicitamente características dos usuários aos requisitos de usabilidade, promovendo discussões colaborativas entre membros da equipe.
 
 Estudos subsequentes avaliaram o método em diferentes contextos, incluindo ambientes distribuídos, indicando benefícios relacionados à conscientização sobre usabilidade e à melhoria da qualidade das especificações produzidas \cite{marques2022}. Entretanto, esses estudos também evidenciam variações na forma como os mecanismos do método são utilizados, bem como diferenças entre percepção positiva e uso efetivo dos artefatos propostos.
 
 \section{Síntese Crítica e Posicionamento do Trabalho}
 
-A análise dos trabalhos relacionados evidencia que, embora existam diversas propostas para incorporar usabilidade ao processo de Engenharia de Requisitos, ainda são limitadas as abordagens que investigam simultaneamente a elicitação e a especificação de requisitos de usabilidade em contextos ágeis, com base em evidências empíricas sistematizadas.
+A análise dos trabalhos relacionados evidencia que, embora existam diversas propostas para incorporar usabilidade ao processo de Engenharia de Requisitos, ainda são limitadas as abordagens que investigam simultaneamente a elicitação e a especificação de requisitos de usabilidade em contextos ágeis, com base em evidências empíricas sistematizadas. Além disso, observa-se que a maioria dos estudos apresenta avaliações pontuais ou contextuais, sem uma síntese integrada das evidências disponíveis.
 
-Além disso, observa-se que a maioria dos estudos apresenta avaliações pontuais ou contextuais, sem uma síntese integrada das evidências disponíveis. Nesse sentido, o presente trabalho se diferencia ao realizar uma meta-análise empírica de braço único do método USARP, combinando análise estatística descritiva, redução de dimensionalidade por meio de PCA e análise qualitativa. Essa abordagem permite investigar padrões recorrentes de uso, percepção e adoção do método, contribuindo para uma compreensão mais abrangente de suas potencialidades e limitações em diferentes contextos de desenvolvimento de software.
+No campo da Engenharia de Software, a síntese de evidências por meio de revisões sistemáticas e estudos de mapeamento tem ganhado espaço como forma de organizar e interpretar o conhecimento produzido na área. \citeonline{kitchenham2009} destacam que, embora haja um crescimento na produção de revisões sistemáticas em Engenharia de Software, ainda existem desafios relacionados ao rigor metodológico e, especialmente, à forma como os resultados são sintetizados. \citeonline{cruzesdyba2010} complementam essa discussão ao mostrarem que uma parcela significativa das revisões analisadas não apresenta síntese propriamente dita, e que, entre as que apresentam, predominam abordagens narrativas ou temáticas. Esses autores defendem a ampliação do repertório de métodos de síntese para tornar as revisões mais úteis para a pesquisa e para a prática.
+
+Especificamente no domínio da usabilidade de software, \citeonline{almazroi2021} realizou um mapeamento sistemático com o objetivo de classificar os estudos existentes e identificar tendências e lacunas na literatura. Os resultados indicam a predominância de estudos de proposta e de avaliação, enquanto estudos de validação empírica ainda aparecem de forma mais limitada. Em conjunto, esses trabalhos mostram que a literatura da área ainda é marcada, em grande parte, por sínteses descritivas ou narrativas, voltadas a panoramas amplos de técnicas, temas e tendências.
+
+Diferentemente dessas abordagens, o presente trabalho adota uma síntese híbrida, integrando análise estatística descritiva, redução de dimensionalidade por meio da Análise de Componentes Principais (PCA) e interpretação qualitativa dos resultados obtidos com o método USARP. Assim, enquanto os trabalhos relacionados oferecem um escopo mais amplo ou sínteses não quantitativas, este TCC focaliza evidências empíricas específicas do USARP de forma estatisticamente informada, aprofundando a análise de um método específico em contextos acadêmicos e industriais e destacando padrões de uso, percepção e adoção ainda pouco explorados na literatura.
+
+A Tabela~\ref{tab:comparacao-trabalhos} apresenta uma comparação entre os trabalhos relacionados e o trabalho proposto, destacando dimensões relevantes para o posicionamento deste estudo.
 
 \begin{table}[h!]
 \captionsetup{width=15cm}
 \caption{Comparação entre os trabalhos relacionados e o trabalho proposto}
 \label{tab:comparacao-trabalhos}
 \IBGEtab{}{
+\resizebox{\textwidth}{!}{%
 \begin{tabular}{lcccccc}
 \toprule
 \textbf{Trabalho} &
-\textbf{Eng. de} &
-\textbf{Elicitação} &
-\textbf{Requisitos} &
-\textbf{Personas /} &
-\textbf{Evidência} &
-\textbf{Síntese} \\
- & \textbf{Requisitos} &
-\textbf{e Especificação} &
-\textbf{de Usabilidade} &
-\textbf{User Stories} &
-\textbf{Empírica} &
-\textbf{Sistematizada} \\
+\shortstack{\textbf{Eng. de}\\\textbf{Requisitos}} &
+\shortstack{\textbf{Elicitação}\\\textbf{e Especificação}} &
+\shortstack{\textbf{Requisitos}\\\textbf{de Usabilidade}} &
+\shortstack{\textbf{Personas /}\\\textbf{User Stories}} &
+\shortstack{\textbf{Evidência}\\\textbf{Empírica}} &
+\shortstack{\textbf{Síntese}\\\textbf{Sistematizada}} \\
 \midrule \midrule
 Juristo et al. (2007)        & X & X & X &  & X &  \\
-Moreno e Yagüe (2012)       & X &   & X & X & X &  \\
-Choma et al. (2016)         & X &   & X & X & X &  \\
-Ferreira et al. (2018)      & X & X &   & X & X &  \\
-Oliveira Jr. et al. (2020)  & X & X & X & X & X &  \\
-Marques et al. (2022)       & X &   & X & X & X &  \\
-\textbf{Este trabalho}      & X & X & X & X & X & X \\
+Moreno e Yag\"ue (2012)      & X &   & X & X & X &  \\
+Choma et al. (2016)          & X &   & X & X & X &  \\
+Ferreira et al. (2018)       & X & X &   & X & X &  \\
+Oliveira Jr. et al. (2020)   & X & X & X & X & X &  \\
+Marques et al. (2022)        & X &   & X & X & X &  \\
+\textbf{Este trabalho}       & X & X & X & X & X & X \\
 \bottomrule
-\end{tabular}
+\end{tabular}%
+}
 }{
 \Fonte{Elaborada pelo autor (2025).}
 }

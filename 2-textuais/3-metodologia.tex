@@ -10,40 +10,79 @@ No que se refere à abordagem metodológica, o trabalho adotará uma estratégia
 
 \section{Síntese Empírica dos Estudos sobre o Método USARP}
 
-O estudo será conduzido como uma meta-análise empírica de braço único, na qual evidências quantitativas e qualitativas provenientes de diferentes estudos empíricos sobre o método USARP serão sintetizadas de forma integrada. Diferentemente de uma meta-análise estatística comparativa clássica, este trabalho não realizará comparação entre grupos controle e experimental, mas buscará identificar padrões recorrentes, tendências temporais e estruturas latentes associadas à aplicação do método \cite{kitchenham2009,rodrigues2010}.
+Este estudo será conduzido como uma síntese empírica de braço único, na qual evidências quantitativas e qualitativas provenientes de diferentes estudos sobre o método USARP serão integradas de forma articulada. Diferentemente de uma meta-análise estatística comparativa clássica, o presente trabalho não estabelecerá comparação entre grupos controle e experimental, mas buscará identificar padrões recorrentes, tendências de percepção e estruturas latentes associadas à aplicação do método \cite{kitchenham2009,rodrigues2010}.
 
-Os dados analisados serão extraídos de estudos empíricos conduzidos em contextos acadêmicos, envolvendo estudantes de Engenharia de Software, e contextos industriais, incluindo equipes distribuídas e ambientes de desenvolvimento remoto \cite{marques2022}.
+Os dados analisados serão extraídos de estudos empíricos realizados em contextos acadêmicos e industriais, envolvendo estudantes de Engenharia de Software e equipes distribuídas de desenvolvimento de software. Para explicitar o escopo da análise, foram considerados quatro estudos prévios sobre a aplicação do USARP:
+
+\begin{itemize}
+    \item \citeonline{oliveirajr2020} introduzem o método USARP e apresentam um estudo de viabilidade com estudantes de Engenharia de Software em ambiente acadêmico, analisando a percepção inicial de uso do método.
+    \item \citeonline{marques2022} relatam a experiência de uma equipe ágil remota na indústria ao aplicar o método em um projeto real, analisando seus efeitos sobre a elicitação de requisitos de usabilidade e sobre a identificação de aspectos relevantes de UI/UX.
+    \item \citeonline{simoes2022usarp} descrevem um estudo de caso na indústria, com equipes trabalhando remotamente, analisando a aplicação do USARP em um contexto distribuído e os impactos percebidos no processo de elicitação.
+    \item \citeonline{fiori2022} descrevem um estudo de caso acadêmico realizado em contexto remoto, no qual o método foi aplicado por estudantes em projetos de software, analisando a utilidade percebida do USARP e o ganho de produtividade no processo de elicitação.
+\end{itemize}
+
+Nos quatro estudos, foram analisadas principalmente duas naturezas de evidência. A primeira diz respeito aos dados quantitativos, obtidos por meio de escalas Likert e voltados à percepção de produtividade, eficiência, completude e utilidade do método USARP. A segunda corresponde aos registros qualitativos, como comentários e observações dos participantes, os quais contribuem para interpretar o uso efetivo do método e compreender a utilidade percebida de suas cartas e artefatos. Dessa forma, as fontes empíricas selecionadas reúnem evidências sobre a experiência de uso do USARP em cenários distintos, permitindo uma leitura mais abrangente de sua aplicação prática.
 
 \section{Instrumento de Coleta de Dados}
 
-A principal fonte de dados quantitativos deste estudo consistirá em questionários estruturados aplicados após a utilização do método USARP. Esses questionários serão empregados em diversos contextos, acadêmicos e industriais, e terão como objetivo capturar a percepção dos participantes sobre a utilidade, eficácia, produtividade e aplicabilidade prática do método.
+Nesta pesquisa, os dados quantitativos analisados foram provenientes de estudos empíricos primários que aplicaram o método USARP em contextos acadêmicos e industriais. Assim, este trabalho realizou uma análise secundária com base nas respostas já coletadas por meio de questionários estruturados nesses estudos, permitindo uma síntese comparativa entre diferentes cenários de aplicação do método.
 
-Os questionários serão organizados em dois blocos principais:
+Os questionários utilizados nesses estudos foram organizados em dois blocos principais. O primeiro bloco foi fundamentado no \textit{Technology Acceptance Model} (TAM), com foco em captar percepções relacionadas à aceitação e ao uso percebido do USARP. O segundo bloco avaliou a utilidade percebida das cartas do método, considerando suas funcionalidades específicas no apoio à elicitação de requisitos de usabilidade e à prototipação.
 
 \begin{enumerate}
-    \item \textbf{Bloco 1 – Percepção Geral do Método USARP}: Este bloco avaliará quatro dimensões centrais associadas ao uso do método:
+    \item \textbf{Bloco 1 -- Percepção Geral do Método USARP (baseado no TAM)}: esse bloco contemplou quatro dimensões principais associadas à aceitação do método:
     \begin{itemize}[leftmargin=1.5cm,label=\textbullet]
-        \item Produtividade;
-        \item Eficiência;
-        \item Completude;
-        \item Utilidade.
+        \item \textbf{Utilidade}: indicou o grau em que o USARP foi considerado útil para melhorar o desempenho na elicitação de requisitos de usabilidade, alinhando-se ao construto \textit{perceived usefulness} do TAM;
+        \item \textbf{Eficiência}: mediu a facilidade percebida na aplicação do método, relacionada ao construto \textit{perceived ease of use};
+        \item \textbf{Produtividade}: refletiu a percepção de ganho de tempo e de eficácia prática durante a utilização do USARP;
+        \item \textbf{Completude}: avaliou se o método contribuiu para uma identificação mais abrangente dos requisitos de usabilidade.
     \end{itemize}
-    Para cada uma dessas dimensões, os participantes responderão em uma escala do tipo Likert de 5 pontos, variando de “Discordo totalmente” (1) a “Concordo totalmente” (5).
+    Cada dimensão foi mensurada por meio de itens em escala Likert de 5 pontos, variando de “Discordo totalmente” (1) a “Concordo totalmente” (5).
 
-    \item \textbf{Bloco 2 – Percepção Específica sobre o Conteúdo das Cartas do USARP}: Este bloco será subdividido conforme os três tipos de cartas do método:
+    \item \textbf{Bloco 2 -- Percepção Específica sobre o Conteúdo das Cartas do USARP}: esse bloco foi subdividido conforme os três tipos de cartas do método:
     \begin{itemize}[leftmargin=1.5cm,label=\textbullet]
         \item \textbf{Cartas Amarelas (Mecanismos de Usabilidade)};
         \item \textbf{Cartas Azuis (Requisitos)};
         \item \textbf{Cartas Laranjas (Prototipação)}.
     \end{itemize}
-    Para cada carta, os participantes avaliarão diferentes aspectos como: clareza da descrição do mecanismo, contextualização, apoio à elicitação de requisitos e suporte à prototipação. As respostas serão coletadas por meio de uma escala ordinal de 6 pontos, variando de “Prejudicou” (1) a “Ajudou muito” (6).
+    Para cada tipo de carta, os participantes avaliaram aspectos como clareza da descrição, contextualização, apoio à elicitação de requisitos e suporte à prototipação. As respostas foram registradas em uma escala ordinal de 6 pontos, variando de "Não foi utilizado" (1) a "Ajudou muito" (6).
 \end{enumerate}
+
+Dessa forma, o instrumento de análise empregado neste trabalho reuniu tanto percepções gerais sobre a aceitação do USARP quanto avaliações específicas sobre os artefatos que o compõem, permitindo compreender não apenas se o método foi considerado útil, mas também quais de seus elementos foram percebidos como mais eficazes pelos participantes.
 
 \section{Escala de Medida e Variáveis}
 
-As questões dos questionários utilizarão uma escala ordinal do tipo Likert, com cinco ou seis níveis de resposta. Para viabilizar a análise estatística, as respostas textuais serão mapeadas para valores numéricos inteiros, prática comum em análises exploratórias com dados perceptivos \cite{hair2019}.
+As questões fechadas dos questionários utilizaram uma escala ordinal do tipo Likert, com cinco ou seis níveis de resposta, conforme o bloco de avaliação. Para permitir a análise estatística, as respostas textuais foram posteriormente convertidas em valores numéricos inteiros, procedimento usual em análises exploratórias com dados perceptivos \cite{hair2019}. Nesse processo, as respostas referentes ao bloco de percepção geral do método foram codificadas em uma escala de 1 a 5, enquanto as respostas sobre o conteúdo das cartas foram codificadas em uma escala de 1 a 6.
 
-A partir dos questionários, serão definidas as seguintes variáveis analíticas: produtividade, eficiência, completude, utilidade, descrição do mecanismo de usabilidade, contexto do mecanismo de usabilidade, questão a ser explorada sobre requisitos, guia de especificação do requisito, questão sobre prototipação e guia de especificação da prototipação. Cada observação corresponderá a um grupo definido por ano e contexto (acadêmico ou industrial).
+A partir dessas respostas, foram definidas variáveis quantitativas diretamente relacionadas aos construtos avaliados nos estudos primários. Essas variáveis representam, de um lado, a percepção geral de aceitação do método USARP e, de outro, a utilidade percebida de seus artefatos específicos. Além disso, os itens abertos do questionário, como aqueles sobre características do método, possíveis adaptações e contexto de aplicação, não foram tratados como variáveis numéricas nesta etapa, mas serviram como apoio à interpretação qualitativa dos resultados. A Tabela~\ref{tab:variaveis-questionario} apresenta as variáveis analíticas derivadas dos questionários e suas respectivas descrições.
+
+\begin{table}[h!]
+\centering
+\captionsetup{width=15cm}
+\caption{Variáveis analíticas derivadas dos questionários}
+\label{tab:variaveis-questionario}
+\IBGEtab{}{
+\begin{tabular}{p{4cm}p{10cm}}
+\toprule
+\textbf{Variável} & \textbf{Descrição} \\
+\midrule \midrule
+Produtividade & Mede a percepção de ganho de tempo e de desempenho na elicitação de requisitos de UI/UX ao utilizar o USARP. \\
+Eficiência & Indica o grau de facilidade percebida para aplicar o método durante o processo de elicitação. \\
+Completude & Representa a percepção de que o USARP permite identificar um conjunto mais abrangente de requisitos de usabilidade. \\
+Utilidade & Expressa o quanto o método é percebido como útil para apoiar a elicitação de requisitos de UI/UX. \\
+Descrição do mecanismo de usabilidade & Avalia se a descrição apresentada nas cartas amarelas foi considerada clara e compreensível. \\
+Contexto do mecanismo de usabilidade & Verifica se o contexto associado às cartas amarelas auxiliou na compreensão e no uso do mecanismo. \\
+Questão a ser explorada sobre requisitos & Mede o quanto as cartas azuis contribuíram para orientar a identificação de requisitos de usabilidade. \\
+Guia de especificação do requisito & Avalia se as cartas azuis auxiliaram na formulação e na especificação dos requisitos identificados. \\
+Questão sobre prototipação & Verifica se as cartas laranjas apoiaram a reflexão sobre prototipação durante a elicitação. \\
+Guia de especificação da prototipação & Indica se as cartas laranjas contribuíram para orientar a especificação de soluções de prototipação. \\
+\bottomrule
+\end{tabular}
+}{
+\Fonte{Elaborada pelo autor (2026).}
+}
+\end{table}
+Cada observação da base consolidada corresponderá a um grupo definido por ano e contexto de aplicação, isto é, ambiente acadêmico ou industrial. Dessa forma, a análise poderá comparar os padrões de resposta entre diferentes cenários de uso do USARP, preservando a estrutura agregada dos estudos primários e permitindo a síntese das evidências de forma comparável.
 
 \section{Consolidação e Pré-processamento dos Dados}
 
@@ -51,25 +90,33 @@ Como os estudos primários apresentarão respostas agregadas por frequência, as
 
 Antes da aplicação das técnicas multivariadas, os dados passarão por um processo de padronização (\textit{z-score}), garantindo que todas as variáveis contribuam igualmente para a análise, independentemente de suas escalas originais \cite{hair2019}.
 
-\section{Análise Quantitativa Tradicional}
+\section{Análise Quantitativa Descritiva}
 
-Inicialmente, os dados serão analisados por meio de estatística descritiva, incluindo médias, frequências, distribuições percentuais e representações gráficas. Esse tipo de análise é amplamente adotado em estudos empíricos em Engenharia de Software, conforme diretrizes metodológicas consolidadas na literatura \cite{kitchenham2009,runeson2012}, e constituirá a base analítica de grande parte dos estudos primários considerados nesta pesquisa.
+Nesta etapa, os dados consolidados dos questionários serão analisados por meio de estatística descritiva, com o objetivo de resumir e caracterizar as respostas obtidas nos estudos primários. Serão calculadas medidas de tendência central e de dispersão, além de frequências, distribuições percentuais e representações gráficas, de modo a identificar o comportamento geral das variáveis avaliadas e a comparar os resultados entre os diferentes contextos de aplicação do USARP.
 
-A utilização de análises quantitativas tradicionais também será recorrente em revisões narrativas da área. Um exemplo representativo é o trabalho de Glass, Vessey e Ramesh (2002), que examinou 369 artigos publicados em seis periódicos relevantes de Engenharia de Software entre 1995 e 1999. Os autores classificaram manualmente os estudos com base em cinco dimensões: tópicos abordados, abordagens e métodos de pesquisa, disciplinas de referência e nível de análise. Embora o estudo tenha seguido um processo classificatório consistente, ele não foi guiado por um protocolo explícito de revisão sistemática com critérios transparentes de inclusão, exclusão ou avaliação de qualidade. A seleção dos periódicos e dos artigos (um a cada cinco) foi feita com base na percepção de relevância e conveniência, sem um protocolo pré-registrado. A síntese dos dados foi predominantemente descritiva, utilizando frequências e categorias desenvolvidas pelos próprios autores. Embora forneça uma visão ampla e útil sobre o campo de pesquisa em Engenharia de Software, a ausência de critérios formais limita a replicabilidade do estudo e o expõe a vieses de seleção e interpretação.
+A análise quantitativa será conduzida a partir das variáveis definidas na Tabela~\ref{tab:variaveis-questionario}, contemplando tanto as dimensões gerais de percepção do método quanto a utilidade percebida de suas cartas e artefatos. Para o bloco baseado no \textit{Technology Acceptance Model} (TAM), a análise permitirá observar a percepção dos participantes quanto à utilidade, produtividade, eficiência e completude do USARP. Já para o bloco específico sobre as cartas do método, serão examinadas as avaliações atribuídas aos mecanismos de usabilidade, aos requisitos e à prototipação, considerando suas respectivas escalas de resposta.
 
-Em contraposição, as diretrizes para \textit{Systematic Literature Reviews} (SLR) enfatizam a necessidade de protocolos formalizados, documentação rigorosa do processo de busca e critérios explícitos de seleção e avaliação da qualidade dos estudos, como forma de mitigar vieses e aumentar a auditabilidade e a confiabilidade dos resultados \cite{kitchenham2007}. Dessa forma, ao discutir a análise quantitativa tradicional presente nos estudos primários, este trabalho utilizará o estudo de Glass et al. (2002) como referência ilustrativa de revisão narrativa/tradicional, contrastando explicitamente seus procedimentos com as práticas sistemáticas recomendadas na literatura metodológica de SLR.
-
-Entretanto, apesar de sua ampla utilização, a análise descritiva tradicional apresentará limitações quando aplicada a conjuntos de dados compostos por múltiplas variáveis correlacionadas, dificultando a identificação de padrões globais e de relações latentes entre os atributos avaliados. Essa limitação motivará a adoção de técnicas analíticas complementares, capazes de oferecer uma visão mais integrada da estrutura dos dados.
+Além da descrição global dos dados, serão realizadas comparações entre os grupos definidos por ano e por contexto de aplicação, isto é, ambientes acadêmicos e industriais, a fim de identificar possíveis variações nos padrões de resposta. Essa etapa servirá como base para as análises posteriores, especialmente para a aplicação da Análise de Componentes Principais (PCA), que permitirá explorar relações entre as variáveis e identificar estruturas latentes presentes nos dados.
 
 \section{Análise de Componentes Principais}
 
-Como técnica complementar à análise estatística tradicional, será aplicada a Análise de Componentes Principais (PCA) sobre a matriz de dados padronizada. A PCA é uma técnica estatística multivariada amplamente utilizada para redução de dimensionalidade e identificação de estruturas latentes em conjuntos de dados complexos \cite{jolliffe2002,hair2019}.
+Para complementar a análise quantitativa descritiva, será aplicada a Análise de Componentes Principais (PCA) sobre a matriz consolidada das variáveis derivadas dos questionários apresentados na Tabela~\ref{tab:variaveis-questionario}. Essa etapa terá como propósito reduzir a dimensionalidade do conjunto de dados e evidenciar possíveis associações latentes entre as percepções capturadas nas respostas, permitindo observar se algumas variáveis tendem a se agrupar de acordo com padrões comuns de avaliação do USARP.
 
-A seleção do número de componentes considerará a variância explicada individual e acumulada, a análise do \textit{scree plot} e a interpretabilidade conceitual dos componentes, conforme recomendações da literatura estatística \cite{jolliffe2002,hair2019}. Serão retidos os três primeiros componentes principais, responsáveis por explicar mais de 95\% da variância total dos dados.
+Antes da aplicação da PCA, os dados serão padronizados por meio do procedimento \textit{z-score}, de modo que todas as variáveis contribuam de forma comparável para a análise, independentemente de suas escalas originais. Em seguida, a PCA será ajustada sobre a matriz padronizada, e os componentes principais serão examinados a partir de três critérios complementares: a variância explicada por cada componente, a variância acumulada e a interpretabilidade conceitual das combinações obtidas.
 
-\section{Análise Qualitativa e Triangulação}
+A decisão sobre quantos componentes manter não será definida previamente de forma rígida, mas dependerá do comportamento do \textit{scree plot} e da concentração da variância nos primeiros componentes. Na prática, serão priorizados os componentes capazes de sintetizar a maior parte da informação contida nas variáveis originais, de modo a facilitar a interpretação dos resultados sem perda significativa de conteúdo analítico.
 
-Os resultados quantitativos serão interpretados à luz das evidências qualitativas reportadas nos estudos primários, incluindo análises baseadas em Grounded Theory e relatos descritivos dos participantes. Essa triangulação metodológica contribuirá para fortalecer a validade interna e externa dos achados e ampliar a compreensão dos padrões identificados \cite{runeson2012}.
+Após a extração dos componentes, serão analisadas as cargas fatoriais (\textit{loadings}) para identificar quais variáveis mais influenciam cada componente. Além disso, serão observados os escores (\textit{scores}) de cada grupo de observação, definido por ano e contexto de aplicação, a fim de verificar como os estudos acadêmicos e industriais se distribuem no espaço reduzido da PCA. Essa projeção permitirá comparar, de forma visual e interpretativa, a proximidade ou o afastamento entre os diferentes cenários de uso do método.
+
+Os resultados da PCA serão ainda complementados por representações gráficas, como o \textit{scree plot}, gráficos de dispersão entre componentes e histogramas das cargas fatoriais, para apoiar a análise dos padrões identificados. Dessa forma, a PCA será empregada neste trabalho não como uma técnica isolada de classificação, mas como um recurso exploratório para revelar estruturas subjacentes nos dados e apoiar a interpretação integrada das evidências empíricas sintetizadas sobre o USARP.
+
+\section{Análise Qualitativa}
+
+A etapa qualitativa deste trabalho será dedicada à interpretação das respostas abertas registradas nos estudos primários, especialmente aquelas relacionadas às características do método USARP, às adaptações sugeridas pelos participantes e ao contexto de aplicação em cada estudo. Diferentemente das questões fechadas, essas respostas não serão convertidas em valores numéricos, mas examinadas de forma interpretativa, com o objetivo de identificar recorrências, convergências e pontos de atenção presentes nos relatos dos participantes.
+
+Para essa análise, os comentários serão lidos, agrupados e organizados em categorias temáticas, de modo a sintetizar percepções semelhantes sobre utilidade, dificuldades de uso, apoio às atividades de elicitação e possíveis melhorias do método. Esse procedimento permitirá complementar os resultados quantitativos, oferecendo um entendimento mais contextualizado sobre como o USARP foi percebido em cada cenário de aplicação.
+
+Assim, a análise qualitativa não será tratada como uma triangulação metodológica formal, mas como uma etapa interpretativa complementar, voltada a aprofundar a compreensão dos achados obtidos nas questões fechadas e a explicitar aspectos que os valores numéricos, isoladamente, não capturam.
 
 \section{Ambiente Computacional}
 
