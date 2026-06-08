@@ -1,60 +1,73 @@
 \chapter{Metodologia}
+\label{cap:metodologia}
 
-Este capítulo apresenta os passos metodológicos referentes ao trabalho. Será utilizada uma abordagem empírica, exploratória e mista, combinando métodos quantitativos e qualitativos. A metodologia será estruturada de modo a garantir rigor científico e transparência nos procedimentos adotados, bem como possibilitar a replicação do estudo \cite{sommerville2011,runeson2012}.
+Este capítulo apresenta os procedimentos metodológicos adotados no trabalho. Foi utilizada uma abordagem empírica, exploratória e de natureza mista, combinando métodos quantitativos e qualitativos. A metodologia foi estruturada de modo a assegurar rigor científico, transparência nos procedimentos e a possibilidade de replicação do estudo \cite{sommerville2011,runeson2012}. O capítulo está organizado em torno de três blocos: a caracterização da pesquisa e o desenho da síntese empírica (Seções \ref{sec:caracterizacao} e \ref{sec:desenho}); a descrição do instrumento, das variáveis e do tratamento dos dados (Seções \ref{sec:instrumento} a \ref{sec:consolidacao}); e os procedimentos analíticos quantitativos e qualitativos, seguidos do ambiente computacional e das ameaças à validade (Seções \ref{sec:quantitativa} a \ref{sec:validade}).
 
 \section{Caracterização da Pesquisa}
+\label{sec:caracterizacao}
 
-Do ponto de vista de sua finalidade, esta pesquisa será classificada como aplicada, pois investigará a utilização de um método específico (USARP) em contextos reais e educacionais, visando produzir conhecimento com potencial impacto prático. Quanto aos objetivos, o estudo possuirá caráter exploratório e descritivo, uma vez que buscará compreender padrões de uso, percepção e efetividade do método, bem como descrever empiricamente os resultados observados \cite{sommerville2011,runeson2012}.
+Do ponto de vista de sua finalidade, esta pesquisa é classificada como aplicada, pois investiga a utilização de um método específico, o USARP, em contextos reais e educacionais, visando produzir conhecimento com potencial impacto prático. Quanto aos objetivos, o estudo possui caráter exploratório e descritivo, uma vez que busca compreender padrões de uso, percepção e efetividade do método, bem como descrever empiricamente os resultados observados \cite{sommerville2011,runeson2012}.
 
-No que se refere à abordagem metodológica, o trabalho adotará uma estratégia mista, combinando análise quantitativa, baseada em estatística descritiva e Análise de Componentes Principais (PCA), e análise qualitativa, fundamentada na interpretação de evidências empíricas reportadas nos estudos primários \cite{runeson2012}.
+No que se refere à abordagem, o trabalho adota uma estratégia mista, combinando análise quantitativa, baseada em estatística descritiva, redução de dimensionalidade e testes não-paramétricos, com análise qualitativa, fundamentada na interpretação de evidências reportadas e produzidas a partir dos estudos primários \cite{runeson2012}. As duas vertentes são tratadas como leituras complementares de um mesmo fenômeno: a análise quantitativa resume padrões de percepção, enquanto a qualitativa contextualiza e aprofunda esses padrões, conforme detalhado na Seção \ref{sec:qualitativa}.
 
-\section{Síntese Empírica dos Estudos sobre o Método USARP}
+\section{Desenho da Síntese Empírica de Braço Único}
+\label{sec:desenho}
 
-Este estudo será conduzido como uma síntese empírica de braço único, na qual evidências quantitativas e qualitativas provenientes de diferentes estudos sobre o método USARP serão integradas de forma articulada. Diferentemente de uma meta-análise estatística comparativa clássica, o presente trabalho não estabelecerá comparação entre grupos controle e experimental, mas buscará identificar padrões recorrentes, tendências de percepção e estruturas latentes associadas à aplicação do método \cite{kitchenham2009,rodrigues2010}.
+Este estudo foi conduzido como uma síntese empírica de braço único, na qual evidências quantitativas e qualitativas provenientes de diferentes estudos sobre o método USARP foram integradas de forma articulada. Diferentemente de uma meta-análise estatística comparativa clássica, o trabalho não estabelece comparação entre grupos de controle e experimental, nem realiza agregação ponderada de tamanhos de efeito; o objetivo é identificar padrões recorrentes, tendências de percepção e estruturas latentes associadas à aplicação do método \cite{kitchenham2009,rodrigues2010}. Essa escolha é adequada quando não há grupos de comparação direta e o interesse recai sobre a síntese de medidas de um único tratamento ou intervenção em contextos distintos \cite{rodrigues2010}, situação típica da avaliação de um método de Engenharia de Software aplicado em diferentes cenários \cite{runeson2012}.
 
-Os dados analisados serão extraídos de estudos empíricos realizados em contextos acadêmicos e industriais, envolvendo estudantes de Engenharia de Software e equipes distribuídas de desenvolvimento de software. Para explicitar o escopo da análise, foram considerados quatro estudos prévios sobre a aplicação do USARP:
+\subsection{Estudos Primários Incluídos na Síntese}
+\label{sec:estudos-primarios}
+
+Os dados analisados foram extraídos de estudos empíricos realizados em contextos acadêmicos e industriais, envolvendo estudantes de Engenharia de Software e equipes de desenvolvimento atuando de forma remota. Foram considerados quatro estudos primários sobre a aplicação do USARP, descritos a seguir.
 
 \begin{itemize}
-    \item \citeonline{oliveirajr2020} introduzem o método USARP e apresentam um estudo de viabilidade com estudantes de Engenharia de Software em ambiente acadêmico, analisando a percepção inicial de uso do método.
-    \item \citeonline{marques2022} relatam a experiência de uma equipe ágil remota na indústria ao aplicar o método em um projeto real, analisando seus efeitos sobre a elicitação de requisitos de usabilidade e sobre a identificação de aspectos relevantes de UI/UX.
-    \item \citeonline{simoes2022usarp} descrevem um estudo de caso na indústria, com equipes trabalhando remotamente, analisando a aplicação do USARP em um contexto distribuído e os impactos percebidos no processo de elicitação.
-    \item \citeonline{fiori2022} descrevem um estudo de caso acadêmico realizado em contexto remoto, no qual o método foi aplicado por estudantes em projetos de software, analisando a utilidade percebida do USARP e o ganho de produtividade no processo de elicitação.
+    \item \citeonline{oliveirajr2020} introduzem o método USARP e relatam um estudo de viabilidade com cinco estudantes de Engenharia de Software, em ambiente acadêmico e de forma remota. A condução seguiu a metodologia de \textit{Design Science Research} \cite{wieringa2009}, e a avaliação combinou a inspeção das \textit{user stories} produzidas com a análise de um grupo focal, codificado por procedimentos de \textit{Grounded Theory}. É importante registrar que esse estudo antecede a versão do método baseada em cartas: as cartas surgiram justamente como recomendação de evolução, motivada pela percepção de que os padrões originais eram extensos e cansativos. Por essa razão, o estudo integra a presente síntese sobretudo no plano qualitativo e conceitual, e não compõe a matriz quantitativa.
+    \item \citeonline{marques2022} relatam um estudo de caso participativo conduzido por uma equipe ágil remota na indústria, aplicando o método em um projeto real. O estudo adotou análise documental, observação e um levantamento (\textit{survey}) com os participantes. Esse levantamento é a origem do instrumento quantitativo reaproveitado nos demais estudos.
+    \item \citeonline{fiori2022} descrevem um estudo de caso no contexto acadêmico, realizado de forma remota, no qual o método foi aplicado por estudantes de graduação organizados em equipes. O estudo reutilizou o instrumento de levantamento e combinou análise quantitativa com análise qualitativa por \textit{Grounded Theory}.
+    \item \citeonline{simoes2022usarp} descrevem um estudo de caso na indústria, com equipes trabalhando remotamente em um cenário de Desenvolvimento Distribuído de Software. O estudo reaproveitou o instrumento adotado por \citeonline{fiori2022}, acrescido de um bloco específico sobre a aplicação do método na indústria, e empregou análise quantitativa e qualitativa por \textit{Grounded Theory}.
 \end{itemize}
 
-Nos quatro estudos, foram analisadas principalmente duas naturezas de evidência. A primeira diz respeito aos dados quantitativos, obtidos por meio de escalas Likert e voltados à percepção de produtividade, eficiência, completude e utilidade do método USARP. A segunda corresponde aos registros qualitativos, como comentários e observações dos participantes, os quais contribuem para interpretar o uso efetivo do método e compreender a utilidade percebida de suas cartas e artefatos. Dessa forma, as fontes empíricas selecionadas reúnem evidências sobre a experiência de uso do USARP em cenários distintos, permitindo uma leitura mais abrangente de sua aplicação prática.
+Dessa forma, três dos quatro estudos (\citeauthor{marques2022}, \citeauthor{fiori2022} e \citeauthor{simoes2022usarp}) aplicaram um instrumento de levantamento comum, cujas respostas, no nível do respondente, compõem a base quantitativa desta síntese. O estudo seminal de \citeonline{oliveirajr2020} contribui com evidência qualitativa e com a fundamentação do próprio instrumento e do método em sua forma atual.
+
+\subsection{Naturezas de Evidência e Estratégia de Integração}
+\label{sec:naturezas-evidencia}
+
+Foram consideradas duas naturezas de evidência. A primeira corresponde aos dados quantitativos, obtidos por meio de escalas ordinais (Likert e similar), voltados à percepção de desempenho, produtividade, eficácia e utilidade do método, bem como à utilidade percebida do conteúdo de suas cartas. A segunda corresponde aos registros qualitativos, como respostas abertas, comentários e observações dos participantes, que permitem interpretar o uso efetivo do método e a percepção sobre seus artefatos. A integração das duas naturezas segue uma estratégia sequencial e complementar: as evidências quantitativas, consolidadas no nível do respondente, são submetidas a análises exploratórias e inferenciais (Seção \ref{sec:quantitativa}); em paralelo, as evidências qualitativas são sintetizadas tematicamente (Seção \ref{sec:qualitativa}); por fim, os dois conjuntos são confrontados para evidenciar convergências e tensões entre percepção declarada e uso efetivo.
 
 \section{Instrumento de Coleta de Dados}
+\label{sec:instrumento}
 
-Nesta pesquisa, os dados quantitativos analisados foram provenientes de estudos empíricos primários que aplicaram o método USARP em contextos acadêmicos e industriais. Assim, este trabalho realizou uma análise secundária com base nas respostas já coletadas por meio de questionários estruturados nesses estudos, permitindo uma síntese comparativa entre diferentes cenários de aplicação do método.
+Os dados quantitativos analisados são provenientes de estudos empíricos primários que aplicaram o método USARP em contextos acadêmicos e industriais. Assim, este trabalho realiza uma análise secundária baseada nas respostas já coletadas por meio de questionários estruturados nesses estudos, o que permite uma síntese comparativa entre diferentes cenários de aplicação do método.
 
-Os questionários utilizados nesses estudos foram organizados em dois blocos principais. O primeiro bloco foi fundamentado no \textit{Technology Acceptance Model} (TAM), com foco em captar percepções relacionadas à aceitação e ao uso percebido do USARP. O segundo bloco avaliou a utilidade percebida das cartas do método, considerando suas funcionalidades específicas no apoio à elicitação de requisitos de usabilidade e à prototipação.
+O instrumento comum, originalmente proposto por \citeonline{marques2022} e reutilizado por \citeonline{fiori2022} e \citeonline{simoes2022usarp}, organiza-se em dois blocos principais. O primeiro fundamenta-se no \textit{Technology Acceptance Model} (TAM), com foco em captar percepções relacionadas à aceitação e ao uso percebido do método. O segundo avalia a utilidade percebida do conteúdo das cartas do método, considerando suas funcionalidades específicas no apoio à elicitação de requisitos de usabilidade e à prototipação.
 
 \begin{enumerate}
-    \item \textbf{Bloco 1 -- Percepção Geral do Método USARP (baseado no TAM)}: esse bloco contemplou quatro dimensões principais associadas à aceitação do método:
+    \item \textbf{Bloco 1 -- Percepção Geral do Método USARP (baseado no TAM)}: contempla quatro dimensões associadas à aceitação do método:
     \begin{itemize}[leftmargin=1.5cm,label=\textbullet]
-        \item \textbf{Utilidade}: indicou o grau em que o USARP foi considerado útil para melhorar o desempenho na elicitação de requisitos de usabilidade, alinhando-se ao construto \textit{perceived usefulness} do TAM;
-        \item \textbf{Eficiência}: mediu a facilidade percebida na aplicação do método, relacionada ao construto \textit{perceived ease of use};
-        \item \textbf{Produtividade}: refletiu a percepção de ganho de tempo e de eficácia prática durante a utilização do USARP;
-        \item \textbf{Completude}: avaliou se o método contribuiu para uma identificação mais abrangente dos requisitos de usabilidade.
+        \item \textbf{Utilidade}: grau em que o USARP foi considerado útil para melhorar o desempenho na elicitação de requisitos de usabilidade, alinhada ao construto \textit{perceived usefulness} do TAM;
+        \item \textbf{Eficiência}: facilidade percebida na aplicação do método, relacionada ao construto \textit{perceived ease of use};
+        \item \textbf{Produtividade}: percepção de ganho de tempo e de eficácia prática durante a utilização do método;
+        \item \textbf{Completude}: percepção de que o método contribui para uma identificação mais abrangente dos requisitos de usabilidade.
     \end{itemize}
-    Cada dimensão foi mensurada por meio de itens em escala Likert de 5 pontos, variando de “Discordo totalmente” (1) a “Concordo totalmente” (5).
+    Cada dimensão foi mensurada por itens em escala Likert de 5 pontos, variando de ``Discordo totalmente'' (1) a ``Concordo totalmente'' (5).
 
-    \item \textbf{Bloco 2 -- Percepção Específica sobre o Conteúdo das Cartas do USARP}: esse bloco foi subdividido conforme os três tipos de cartas do método:
+    \item \textbf{Bloco 2 -- Percepção Específica sobre o Conteúdo das Cartas do USARP}: subdividido conforme os três tipos de cartas do método:
     \begin{itemize}[leftmargin=1.5cm,label=\textbullet]
         \item \textbf{Cartas Amarelas (Mecanismos de Usabilidade)};
         \item \textbf{Cartas Azuis (Requisitos)};
         \item \textbf{Cartas Laranjas (Prototipação)}.
     \end{itemize}
-    Para cada tipo de carta, os participantes avaliaram aspectos como clareza da descrição, contextualização, apoio à elicitação de requisitos e suporte à prototipação. As respostas foram registradas em uma escala ordinal de 6 pontos, variando de "Não foi utilizado" (1) a "Ajudou muito" (6).
+    Para cada tipo de carta, os participantes avaliaram aspectos como clareza da descrição, contextualização, apoio à elicitação de requisitos e suporte à prototipação. As respostas foram registradas em uma escala ordinal de 6 pontos, variando de ``Não foi utilizado'' (1) a ``Ajudou muito'' (6).
 \end{enumerate}
 
-Dessa forma, o instrumento de análise empregado neste trabalho reuniu tanto percepções gerais sobre a aceitação do USARP quanto avaliações específicas sobre os artefatos que o compõem, permitindo compreender não apenas se o método foi considerado útil, mas também quais de seus elementos foram percebidos como mais eficazes pelos participantes.
+Além dos itens fechados, o instrumento contém questões abertas, voltadas às características do método consideradas úteis (ou não) para a elicitação e para a prototipação, e a sugestões de adaptação. Essas questões não foram convertidas em variáveis numéricas, servindo de base para a análise qualitativa (Seção \ref{sec:qualitativa}). Dessa forma, o instrumento reúne tanto percepções gerais sobre a aceitação do método quanto avaliações específicas sobre os artefatos que o compõem, permitindo compreender não apenas se o método foi considerado útil, mas também quais de seus elementos foram percebidos como mais eficazes.
 
 \section{Escala de Medida e Variáveis}
+\label{sec:escala-variaveis}
 
-As questões fechadas dos questionários utilizaram uma escala ordinal do tipo Likert, com cinco ou seis níveis de resposta, conforme o bloco de avaliação. Para permitir a análise estatística, as respostas textuais foram posteriormente convertidas em valores numéricos inteiros, procedimento usual em análises exploratórias com dados perceptivos \cite{hair2019}. Nesse processo, as respostas referentes ao bloco de percepção geral do método foram codificadas em uma escala de 1 a 5, enquanto as respostas sobre o conteúdo das cartas foram codificadas em uma escala de 1 a 6.
+As questões fechadas utilizaram escalas ordinais do tipo Likert, com cinco ou seis níveis de resposta conforme o bloco. Para permitir a análise estatística, as respostas textuais foram convertidas em valores numéricos inteiros, procedimento usual em análises exploratórias com dados perceptivos \cite{hair2019}. As respostas do bloco de percepção geral foram codificadas na escala de 1 a 5, e as respostas sobre o conteúdo das cartas, na escala de 1 a 6.
 
-A partir dessas respostas, foram definidas variáveis quantitativas diretamente relacionadas aos construtos avaliados nos estudos primários. Essas variáveis representam, de um lado, a percepção geral de aceitação do método USARP e, de outro, a utilidade percebida de seus artefatos específicos. Além disso, os itens abertos do questionário, como aqueles sobre características do método, possíveis adaptações e contexto de aplicação, não foram tratados como variáveis numéricas nesta etapa, mas serviram como apoio à interpretação qualitativa dos resultados. A Tabela~\ref{tab:variaveis-questionario} apresenta as variáveis analíticas derivadas dos questionários e suas respectivas descrições.
+A partir dessas respostas, definiram-se as variáveis quantitativas diretamente relacionadas aos construtos avaliados nos estudos primários. Essas variáveis representam, de um lado, a percepção geral de aceitação do método e, de outro, a utilidade percebida de seus artefatos específicos. A Tabela \ref{tab:variaveis-questionario} apresenta as variáveis analíticas derivadas dos questionários e suas descrições.
 
 \begin{table}[h!]
 \centering
@@ -82,105 +95,109 @@ Guia de especificação da prototipação & Indica se as cartas laranjas contrib
 \Fonte{Elaborada pelo autor (2026).}
 }
 \end{table}
-Cada observação da base consolidada corresponderá a um grupo definido por ano e contexto de aplicação, isto é, ambiente acadêmico ou industrial. Dessa forma, a análise poderá comparar os padrões de resposta entre diferentes cenários de uso do USARP, preservando a estrutura agregada dos estudos primários e permitindo a síntese das evidências de forma comparável.
+
+Além das dez variáveis-núcleo descritas na Tabela \ref{tab:variaveis-questionario}, o conjunto de dados inclui um grupo auxiliar de variáveis sobre o site de apoio ao método. Essas variáveis foram tratadas apenas de forma descritiva e fora das análises multivariadas, conforme justificado na Seção \ref{sec:consolidacao}.
+
+\section{Unidade de Análise e Estrutura dos Dados}
+\label{sec:unidade-analise}
+
+A unidade de análise adotada é o respondente individual. Cada observação da base consolidada corresponde a um único participante que avaliou o método em um dos estudos primários, e não a uma média agregada por grupo. Essa decisão é metodologicamente necessária, pois as técnicas multivariadas empregadas (correlação, análise de componentes principais e segmentação por agrupamento) exigem variabilidade entre observações individuais e um número de observações superior ao de variáveis, condição indispensável para que estimativas de associação e de estrutura latente sejam interpretáveis \cite{hair2019}. A agregação prévia das respostas em médias por coorte colapsaria a variabilidade intragrupo e reduziria drasticamente o número de observações, inviabilizando a estimação da matriz de correlação e, por consequência, a própria PCA.
+
+A base consolidada reúne as respostas individuais dos participantes dos estudos que adotaram o instrumento comum, totalizando aproximadamente sessenta e oito respondentes distribuídos entre os contextos acadêmico e industrial. A matriz analítica foi organizada em duas camadas. A primeira reúne as dez variáveis-núcleo, de natureza ordinal, listadas na Tabela \ref{tab:variaveis-questionario}. A segunda compreende as variáveis auxiliares sobre o site de apoio. Além das variáveis-núcleo, preservaram-se dois atributos categóricos de estratificação: o contexto de aplicação, recodificado de forma binária (Acadêmico \emph{versus} Indústria), e a coorte, que identifica o estudo de origem e o ano de aplicação, mantida para viabilizar as comparações entre grupos descritas na Seção \ref{sec:comparacoes-grupos}.
 
 \section{Consolidação e Pré-processamento dos Dados}
+\label{sec:consolidacao}
 
-Como os estudos primários apresentarão respostas agregadas por frequência, as variáveis serão calculadas por meio de médias ponderadas, considerando a distribuição das respostas em cada item do questionário, procedimento amplamente adotado em análises estatísticas exploratórias \cite{hair2019}. 
+Os dados provenientes dos estudos primários foram consolidados em uma única base no nível do respondente, preservando-se os identificadores originais de cada participante para fins de rastreabilidade. As respostas abertas foram organizadas em um arquivo complementar em formato longo, com uma linha por par respondente e pergunta, dedicado à análise qualitativa.
 
-Antes da aplicação das técnicas multivariadas, os dados passarão por um processo de padronização (\textit{z-score}), garantindo que todas as variáveis contribuam igualmente para a análise, independentemente de suas escalas originais \cite{hair2019}.
+Quanto a dados ausentes, identificou-se um único valor faltante entre as dez variáveis-núcleo, no item de guia de prototipação, referente a um respondente do contexto industrial. Dada a magnitude desprezível da ausência (uma célula no conjunto das variáveis-núcleo), optou-se pela imputação pela mediana do item, procedimento robusto e recomendado para variáveis ordinais com distribuição assimétrica, por não introduzir valores fora da escala original nem distorcer a tendência central \cite{hair2019}. A decisão e seu impacto foram documentados de forma transparente.
 
-\section{Análise Quantitativa Descritiva}
+Antes da aplicação das técnicas multivariadas, as variáveis-núcleo foram padronizadas por escore-z, com média zero e desvio-padrão unitário. A padronização é indispensável neste caso porque os dois blocos de itens utilizam amplitudes distintas (escala de 1 a 5 e de 1 a 6); sem ela, os itens de maior amplitude dominariam artificialmente a variância total e enviesariam a extração dos componentes \cite{hair2019}. As variáveis referentes ao site de apoio foram tratadas em separado, apenas de forma descritiva e fora da PCA, porque foram respondidas somente pelos participantes que declararam ter utilizado o recurso, configurando uma ausência estrutural, e não aleatória; incluí-las na matriz multivariada introduziria viés de seleção e padrões espúrios de correlação.
 
-Nesta etapa, os dados consolidados dos questionários serão analisados por meio de estatística descritiva, com o objetivo de resumir e caracterizar as respostas obtidas nos estudos primários. Serão calculadas medidas de tendência central e de dispersão, além de frequências, distribuições percentuais e representações gráficas, de modo a identificar o comportamento geral das variáveis avaliadas e a comparar os resultados entre os diferentes contextos de aplicação do USARP.
+\section{Análise Quantitativa}
+\label{sec:quantitativa}
 
-A análise quantitativa será conduzida a partir das variáveis definidas na Tabela~\ref{tab:variaveis-questionario}, contemplando tanto as dimensões gerais de percepção do método quanto a utilidade percebida de suas cartas e artefatos. Para o bloco baseado no \textit{Technology Acceptance Model} (TAM), a análise permitirá observar a percepção dos participantes quanto à utilidade, produtividade, eficiência e completude do USARP. Já para o bloco específico sobre as cartas do método, serão examinadas as avaliações atribuídas aos mecanismos de usabilidade, aos requisitos e à prototipação, considerando suas respectivas escalas de resposta.
+A análise quantitativa foi conduzida sobre a matriz consolidada no nível do respondente. Ela compreende a caracterização descritiva e o teste de normalidade, o exame da estrutura de correlação, a verificação da adequação amostral, a análise de componentes principais, a detecção de observações atípicas, a segmentação não supervisionada e as comparações entre grupos, descritas nas subseções a seguir.
 
-Além da descrição global dos dados, serão realizadas comparações entre os grupos definidos por ano e por contexto de aplicação, isto é, ambientes acadêmicos e industriais, a fim de identificar possíveis variações nos padrões de resposta. Essa etapa servirá como base para as análises posteriores, especialmente para a aplicação da Análise de Componentes Principais (PCA), que permitirá explorar relações entre as variáveis e identificar estruturas latentes presentes nos dados.
+\subsection{Estatística Descritiva e Teste de Normalidade}
+\label{sec:descritiva}
 
-\section{Análise de Componentes Principais}
+A primeira etapa consistiu em estatística descritiva das dez variáveis-núcleo, com o objetivo de caracterizar o comportamento das respostas em cada item. Foram calculadas medidas de tendência central (média e mediana) e de dispersão (desvio-padrão e amplitude interquartílica), além de distribuições de frequência representadas por histogramas, de modo a evidenciar a concentração das respostas ao longo da escala.
 
-Para complementar a análise quantitativa descritiva, será aplicada a Análise de Componentes Principais (PCA) sobre a matriz consolidada das variáveis derivadas dos questionários apresentados na Tabela~\ref{tab:variaveis-questionario}. Essa etapa terá como propósito reduzir a dimensionalidade do conjunto de dados e evidenciar possíveis associações latentes entre as percepções capturadas nas respostas, permitindo observar se algumas variáveis tendem a se agrupar de acordo com padrões comuns de avaliação do USARP.
+Em itens de percepção avaliados por escalas ordinais positivas, é comum observar um efeito de teto, isto é, a concentração de respostas nos níveis superiores da escala, o que produz assimetria negativa na distribuição. Para verificar formalmente em que medida esse efeito comprometeria a suposição de normalidade, aplicou-se o teste de Shapiro-Wilk a cada item \cite{shapirowilk1965}, considerado adequado e sensível para amostras de tamanho reduzido \cite{field2018}. Esse diagnóstico é o critério objetivo que orienta a escolha entre procedimentos paramétricos e não-paramétricos nas etapas inferenciais: a presença de assimetria acentuada e de desvios de normalidade recomenda o emprego de testes baseados em postos, descritos na Seção \ref{sec:comparacoes-grupos}.
 
-Antes da aplicação da PCA, os dados serão padronizados por meio do procedimento \textit{z-score}, de modo que todas as variáveis contribuam de forma comparável para a análise, independentemente de suas escalas originais. Em seguida, a PCA será ajustada sobre a matriz padronizada, e os componentes principais serão examinados a partir de três critérios complementares: a variância explicada por cada componente, a variância acumulada e a interpretabilidade conceitual das combinações obtidas.
+\subsection{Estrutura de Correlação entre as Variáveis}
+\label{sec:correlacao}
 
-A decisão sobre quantos componentes manter não será definida previamente de forma rígida, mas dependerá do comportamento do \textit{scree plot} e da concentração da variância nos primeiros componentes. Na prática, serão priorizados os componentes capazes de sintetizar a maior parte da informação contida nas variáveis originais, de modo a facilitar a interpretação dos resultados sem perda significativa de conteúdo analítico.
+Como passo preparatório à redução de dimensionalidade, examinou-se a estrutura de associação entre as variáveis-núcleo por meio da matriz de correlação de Spearman. A escolha do coeficiente de postos de Spearman, em vez do coeficiente de Pearson, justifica-se pela natureza ordinal dos itens e pela ausência de normalidade verificada na Seção \ref{sec:descritiva}: a correlação por postos não pressupõe linearidade nem normalidade e é mais apropriada para escalas do tipo Likert \cite{field2018}. A inspeção dessa matriz permite antecipar quais conjuntos de itens tendem a variar em conjunto e fornece subsídio interpretativo para os componentes extraídos pela PCA.
 
-Após a extração dos componentes, serão analisadas as cargas fatoriais (\textit{loadings}) para identificar quais variáveis mais influenciam cada componente. Além disso, serão observados os escores (\textit{scores}) de cada grupo de observação, definido por ano e contexto de aplicação, a fim de verificar como os estudos acadêmicos e industriais se distribuem no espaço reduzido da PCA. Essa projeção permitirá comparar, de forma visual e interpretativa, a proximidade ou o afastamento entre os diferentes cenários de uso do método.
+\subsection{Adequação Amostral à Análise de Componentes Principais}
+\label{sec:adequacao}
 
-Os resultados da PCA serão ainda complementados por representações gráficas, como o \textit{scree plot}, gráficos de dispersão entre componentes e histogramas das cargas fatoriais, para apoiar a análise dos padrões identificados. Dessa forma, a PCA será empregada neste trabalho não como uma técnica isolada de classificação, mas como um recurso exploratório para revelar estruturas subjacentes nos dados e apoiar a interpretação integrada das evidências empíricas sintetizadas sobre o USARP.
+Antes de extrair os componentes, avaliou-se a adequação dos dados à PCA por dois diagnósticos complementares. O teste de esfericidade de Bartlett verifica se a matriz de correlação difere significativamente de uma matriz identidade; sua rejeição indica que existem correlações suficientes entre as variáveis para justificar a extração de estrutura latente \cite{bartlett1950}. A medida de adequação amostral de Kaiser-Meyer-Olkin (KMO) quantifica a proporção de variância potencialmente comum entre as variáveis, sendo usualmente interpretada por faixas em que valores abaixo de 0{,}5 são considerados inaceitáveis e a faixa de 0{,}5 a 0{,}6, medíocre \cite{kaiser1974,field2018}.
+
+Reconhece-se que, em amostras pequenas e com forte efeito de teto, situação esperada neste estudo, o KMO tende a se situar em faixa modesta, uma vez que diversos itens saturam no valor máximo e reduzem a variância compartilhável. Por essa razão, e em consonância com \citeonline{hair2019}, a PCA é empregada aqui como técnica exploratória e descritiva, voltada a resumir a variabilidade e a identificar agrupamentos de itens, e não como análise fatorial confirmatória. Essa ressalva é explicitada na interpretação dos resultados, de modo a não superestimar o alcance das estruturas identificadas.
+
+\subsection{Análise de Componentes Principais}
+\label{sec:pca}
+
+A PCA foi ajustada sobre a matriz padronizada das dez variáveis-núcleo. O número de componentes a reter não foi fixado a priori; reportaram-se múltiplos critérios complementares e a decisão resultou de sua leitura conjunta, conforme recomendado pela literatura de análise multivariada \cite{hair2019}. Foram considerados: o critério de Kaiser, que retém os componentes com autovalor superior a um \cite{kaiser1960}; o \textit{scree plot}, que examina o ponto de inflexão na curva de autovalores \cite{cattell1966}; a variância acumulada, observando-se os limiares de 80\%, 90\% e 95\%; e o erro de reconstrução, isto é, o erro quadrático médio entre a matriz original e a reconstruída a partir de \(k\) componentes, como recurso adicional para avaliar a perda de informação associada a cada nível de redução.
+
+A partir desses critérios, definiram-se dois conjuntos de retenção com propósitos distintos. O conjunto mais parcimonioso, indicado pela regra de Kaiser, foi adotado para a interpretação substantiva dos componentes. Um conjunto mais amplo, suficiente para atingir 80\% da variância acumulada, foi empregado nas análises multidimensionais que demandam mais dimensões, como a segmentação por agrupamento e a inspeção da matriz de dispersão. Para cada componente retido, analisaram-se as cargas fatoriais (\textit{loadings}), a fim de identificar quais variáveis mais contribuem para cada dimensão, e projetaram-se os escores dos respondentes, estratificados por contexto e por coorte, em \textit{biplots} e em gráficos de dispersão bidimensionais e tridimensionais, permitindo comparar visualmente a proximidade entre os diferentes cenários de aplicação.
+
+\subsection{Detecção de Observações Atípicas}
+\label{sec:outliers}
+
+A detecção de observações atípicas foi realizada no espaço dos componentes retidos por meio da distância de Mahalanobis, comparada a um limiar qui-quadrado ao nível de 97{,}5\%, com graus de liberdade iguais ao número de componentes retidos \cite{hair2019}. Optou-se deliberadamente por não remover os respondentes sinalizados: em uma amostra reduzida, a exclusão de casos extremos diminuiria ainda mais o poder analítico e poderia eliminar justamente a variação de interesse entre contextos. Tais observações foram apenas registradas, servindo como ressalva de robustez e como insumo para a discussão qualitativa.
+
+\subsection{Segmentação Não Supervisionada dos Perfis de Percepção}
+\label{sec:clustering}
+
+Para investigar a existência de perfis homogêneos de avaliação do método, aplicou-se o algoritmo de agrupamento \textit{k-means} sobre os escores dos componentes retidos \cite{macqueen1967,jain2010}. A opção por agrupar no espaço dos componentes, e não sobre as variáveis originais, apoia-se no fato de que esse espaço é descorrelacionado e concentra a variância sistemática, reduzindo o ruído e a redundância entre itens \cite{hair2019}.
+
+O número de grupos não foi fixado previamente. Avaliaram-se soluções de dois a oito grupos por meio de dois índices internos de validação: o coeficiente de silhueta, que mede a coesão interna e a separação entre grupos \cite{rousseeuw1987}, e o índice de Davies-Bouldin, em que valores menores indicam melhor separação \cite{daviesbouldin1979}. Adotou-se a solução que maximiza a silhueta média, confirmada pela leitura conjunta do índice de Davies-Bouldin. Os grupos resultantes foram caracterizados pelas médias das variáveis originais, para permitir interpretação substantiva, e cruzados com o contexto de aplicação, a fim de verificar se a segmentação reflete a distinção entre ambientes acadêmicos e industriais. Para garantir reprodutibilidade, fixou-se a semente aleatória e adotaram-se múltiplas inicializações do algoritmo.
+
+\subsection{Comparações entre Grupos}
+\label{sec:comparacoes-grupos}
+
+As comparações entre cenários de aplicação foram conduzidas por testes não-paramétricos, escolha justificada pela natureza ordinal das variáveis, pelo tamanho reduzido da amostra e pelos desvios de normalidade evidenciados na Seção \ref{sec:descritiva} \cite{field2018}. Empregou-se o teste de Kruskal-Wallis para investigar diferenças entre as coortes \cite{kruskalwallis1952} e o teste U de Mann-Whitney para contrastar os contextos acadêmico e industrial \cite{mannwhitney1947}. As comparações foram aplicadas tanto sobre os escores dos componentes principais quanto, de forma item a item, sobre as variáveis originais.
+
+Para o contraste entre contextos, reportou-se o tamanho de efeito \(r = Z/\sqrt{N}\), que permite avaliar a magnitude prática das diferenças além de sua significância estatística \cite{field2018}. Considerando a multiplicidade de testes realizados, aplicou-se a correção de Holm sobre os valores-\(p\), procedimento sequencial que controla a taxa de erro do tipo I por família de comparações com maior poder do que a correção de Bonferroni \cite{holm1979}. Para os itens que permaneceram significativos após a correção, conduziu-se análise \textit{post-hoc} por comparações par a par de Mann-Whitney, igualmente ajustadas por Holm, a fim de localizar entre quais coortes residem as diferenças.
 
 \section{Análise Qualitativa}
+\label{sec:qualitativa}
 
-A etapa qualitativa deste trabalho será dedicada à interpretação das respostas abertas registradas nos estudos primários, especialmente aquelas relacionadas às características do método USARP, às adaptações sugeridas pelos participantes e ao contexto de aplicação em cada estudo. Diferentemente das questões fechadas, essas respostas não serão convertidas em valores numéricos, mas examinadas de forma interpretativa, com o objetivo de identificar recorrências, convergências e pontos de atenção presentes nos relatos dos participantes.
+A análise qualitativa opera em dois níveis articulados: a síntese das evidências qualitativas reportadas nos quatro estudos primários e a reanálise temática das respostas abertas consolidadas no nível do respondente. Ao final, os achados qualitativos são confrontados com os quantitativos.
 
-Para essa análise, os comentários serão lidos, agrupados e organizados em categorias temáticas, de modo a sintetizar percepções semelhantes sobre utilidade, dificuldades de uso, apoio às atividades de elicitação e possíveis melhorias do método. Esse procedimento permitirá complementar os resultados quantitativos, oferecendo um entendimento mais contextualizado sobre como o USARP foi percebido em cada cenário de aplicação.
+\subsection{Síntese Qualitativa dos Estudos Primários}
+\label{sec:sintese-qualitativa-primarios}
 
-Assim, a análise qualitativa não será tratada como uma triangulação metodológica formal, mas como uma etapa interpretativa complementar, voltada a aprofundar a compreensão dos achados obtidos nas questões fechadas e a explicitar aspectos que os valores numéricos, isoladamente, não capturam.
+A síntese das evidências qualitativas reportadas nos estudos primários seguiu a lógica de síntese de estudos empíricos em Engenharia de Software \cite{kitchenham2009,cruzesdyba2010}. Cada estudo foi examinado quanto às categorias temáticas que seus autores reportaram, observando-se que todos adotaram codificação qualitativa de respostas abertas ou de transcrições. \citeonline{oliveirajr2020} codificaram, por procedimentos de \textit{Grounded Theory}, as percepções de um grupo focal, identificando categorias relacionadas à experiência de uso, à utilidade do método, à percepção sobre o uso dos padrões e a sugestões de melhoria, entre as quais a recomendação de simplificar os padrões e convertê-los em cartas. \citeonline{fiori2022} e \citeonline{simoes2022usarp} aplicaram codificação aberta de \textit{Grounded Theory} às respostas abertas de seus questionários, organizando os achados em redes de códigos por categoria. \citeonline{marques2022} analisaram qualitativamente as respostas às questões abertas de seu levantamento para interpretar os resultados quantitativos.
 
-\section{Ambiente Computacional}
+Da leitura comparada emergem padrões recorrentes entre contextos. No eixo positivo, destacam-se a percepção de que as cartas e os guias conferem estrutura e ampliam a visão do projeto, o apoio à classificação e à identificação mais ágil de requisitos, a utilidade do uso conjunto de personas e \textit{user stories}, e a contribuição do método para a discussão colaborativa em equipe. No eixo das dificuldades, recorrem a curva de aprendizado inicial, a dificuldade de compreensão das cartas e, sobretudo, a percepção de que o elevado volume de cartas torna o processo cansativo, observação presente desde o estudo seminal e reiterada nos contextos acadêmico e industrial. Esses padrões fundamentam o esquema de codificação adotado na reanálise consolidada.
 
-As análises quantitativas serão realizadas utilizando a linguagem Python, com apoio das bibliotecas Pandas, NumPy, Scikit-learn e Matplotlib, garantindo reprodutibilidade, transparência metodológica e facilidade de replicação dos procedimentos adotados, conforme boas práticas em pesquisa empírica computacional \cite{kitchenham2009}.
+\subsection{Reanálise Temática das Respostas Abertas Consolidadas}
+\label{sec:reanalise-tematica}
 
-\chapter{CONSIDERAÇÕES FINAIS}
+As respostas abertas dos estudos que adotaram o instrumento comum foram reunidas em um corpus consolidado e submetidas a uma análise temática \cite{braunclarke2006,saldana2013}. A codificação seguiu orientação indutiva: a partir da leitura repetida das respostas, e em diálogo com as categorias reportadas nos estudos primários (Seção \ref{sec:sintese-qualitativa-primarios}), construiu-se um esquema temático no qual cada tema é definido por um conjunto explícito de termos-chave, normalizados e sem acentuação. A explicitação desse dicionário de termos tem por finalidade tornar o processo auditável e replicável, permitindo que terceiros reproduzam ou ajustem a categorização. Adotou-se codificação de rótulos múltiplos, de modo que uma mesma resposta pode ser associada a mais de um tema quando aborda aspectos distintos. Em paralelo, atribuiu-se a cada resposta uma polaridade (positiva, negativa, mista ou neutra) com base em léxicos de sentimento construídos para o domínio, viabilizando uma leitura agregada do tom dos comentários por pergunta e por contexto.
 
-Espera-se que a aplicação do método USARP, conforme delineado nesta pesquisa, contribua para uma elicitação de requisitos de usabilidade mais estruturada, produtiva e eficaz. A organização conceitual do método em cartas temáticas, voltadas a mecanismos, requisitos e prototipação, deverá fornecer aos participantes uma base sistemática de reflexão, favorecendo a identificação de requisitos relevantes de forma mais completa e orientada por boas práticas de design centrado no usuário. Espera-se também que a avaliação empírica permita evidenciar quais mecanismos são mais bem compreendidos e aplicados, e quais ainda apresentam barreiras de uso ou subutilização em contextos reais.
+Os resultados qualitativos foram organizados pela frequência dos temas por pergunta e por contexto, pela identificação dos termos mais recorrentes e pela seleção de trechos representativos de cada categoria. Essa reanálise é compatível com as codificações originais por \textit{Grounded Theory} dos estudos primários, das quais difere por consolidar os relatos de diferentes coortes em um único quadro temático comparável.
 
-Adicionalmente, a combinação de métodos estatísticos tradicionais com Análise de Componentes Principais (PCA) poderá revelar dimensões latentes associadas ao uso do USARP, contribuindo para refinar tanto o instrumento quanto o próprio método. A comparação entre contextos acadêmicos e industriais deverá enriquecer a discussão sobre sua adaptabilidade e aplicabilidade prática. Com isso, o estudo buscará oferecer não apenas um panorama da aceitação do método, mas também insumos para sua evolução contínua, gerando conhecimento útil à comunidade de Engenharia de Requisitos e à prática profissional em projetos orientados à experiência do usuário.
+\subsection{Convergência entre Achados Quantitativos e Qualitativos}
+\label{sec:convergencia}
 
-\section{Cronograma Geral}
+Por fim, os achados qualitativos foram confrontados com os quantitativos, comparando-se os itens de maior e menor avaliação no levantamento com os temas mais recorrentes nas respostas abertas. O objetivo é evidenciar convergências, por exemplo entre a utilidade percebida do método e os relatos de ampliação da visão do projeto, e tensões, por exemplo entre a percepção positiva geral e os relatos sobre o volume de cartas e a subutilização das cartas de prototipação. Trata-se de uma interpretação complementar de natureza exploratória, na qual o conteúdo qualitativo ajuda a explicar os padrões observados nos dados numéricos, em coerência com a abordagem mista adotada no estudo \cite{runeson2012}.
 
-O cronograma de execução deste trabalho está dividido em dois semestres letivos. O primeiro semestre corresponde à disciplina TCC~1 (setembro de 2025 a janeiro de 2026), no qual foram desenvolvidos os capítulos iniciais do trabalho, com destaque para a fundamentação teórica e a metodologia. O segundo semestre corresponde à disciplina TCC~2 (março a julho de 2026), período em que serão realizadas as análises quantitativas e qualitativas, interpretação dos resultados e elaboração das seções finais do trabalho.
+\section{Ambiente Computacional e Reprodutibilidade}
+\label{sec:ambiente}
 
-\captionsetup{width=15cm}
-\captionof{table}{Cronograma de execução das atividades do TCC~1 (2025.2)}
-\label{tab:cronograma_tcc1}
-\IBGEtab{}{
-\begin{tabular}{p{8.2cm}ccccc}
-\toprule
-\textbf{Atividades} & \textbf{Set/25} & \textbf{Out/25} & \textbf{Nov/25} & \textbf{Dez/25} & \textbf{Jan/26} \\
-\midrule \midrule
-Revisão da literatura e seleção de estudos primários & X & X &  &  &  \\
-Definição dos objetivos e estruturação metodológica &  & X & X &  &  \\
-Elaboração dos instrumentos de coleta &  &  & X & X &  \\
-Escrita da seção Introdução & X & X &  &  &  \\
-Escrita da Fundamentação Teórica &  & X & X &  &  \\
-Escrita dos Trabalhos Relacionados &  &  & X & X &  \\
-Escrita da Metodologia &  &  &  & X & X \\
-Revisão e ajustes finais do texto do TCC~1 &  &  &  &  & X \\
-\textbf{Encerramento e entrega do TCC~1} &  &  &  &  & \textbf{X} \\
-\bottomrule
-\end{tabular}
-}{
-\Fonte{Elaborado pelo autor (2025).}
-}
+Todas as análises foram conduzidas na linguagem Python, organizadas em um único \textit{notebook} reprodutível que executa, de ponta a ponta, desde o carregamento dos dados até a geração das figuras. Para a manipulação e o pré-processamento dos dados utilizaram-se as bibliotecas \texttt{pandas} \cite{mckinney2010} e \texttt{NumPy} \cite{harris2020}; para os testes estatísticos (Shapiro-Wilk, Spearman, Kruskal-Wallis e Mann-Whitney), o módulo \texttt{stats} da biblioteca \texttt{SciPy} \cite{virtanen2020}; para a PCA, o agrupamento \textit{k-means} e os índices de validação, a biblioteca \texttt{scikit-learn} \cite{pedregosa2011}; e para a correção de múltiplas comparações e a conferência dos diagnósticos de adequação amostral, as bibliotecas \texttt{statsmodels} e \texttt{factor\_analyzer}. As visualizações foram produzidas com \texttt{Matplotlib} \cite{hunter2007} e \texttt{seaborn}.
 
-\vspace{0.5cm}
+Para assegurar a reprodutibilidade e a transparência metodológica, princípios centrais da pesquisa empírica em Engenharia de Software \cite{kitchenham2009}, todas as etapas estocásticas foram conduzidas com semente aleatória fixa, garantindo a obtenção de resultados idênticos em execuções sucessivas. O \textit{notebook}, os arquivos de dados e o dicionário de variáveis foram organizados de modo a permitir a replicação integral do estudo.
 
-Com a conclusão das atividades previstas no TCC~1, resta agora executar a etapa empírica do trabalho. Isso inclui a consolidação dos dados coletados, a análise estatística e qualitativa, bem como a redação dos capítulos de resultados, discussão e considerações finais. O cronograma do TCC~2 detalha essas etapas e organiza sua execução ao longo do primeiro semestre de 2026.
+\section{Ameaças à Validade}
+\label{sec:validade}
 
-\vspace{0.5cm}
+Em coerência com as boas práticas de estudos empíricos em Engenharia de Software, discutem-se a seguir as principais ameaças à validade \cite{wohlin2012,runeson2012}.
 
-\captionsetup{width=15cm}
-\captionof{table}{Cronograma de execução das atividades do TCC~2 (2026.1)}
-\label{tab:cronograma_tcc2}
-\IBGEtab{}{
-\begin{tabular}{p{8.2cm}ccccc}
-\toprule
-\textbf{Atividades} & \textbf{Mar/26} & \textbf{Abr/26} & \textbf{Mai/26} & \textbf{Jun/26} & \textbf{Jul/26} \\
-\midrule \midrule
-Consolidação e padronização dos dados empíricos & X &  &  &  &  \\
-Análise quantitativa tradicional (estatística descritiva) & X & X &  &  &  \\
-Aplicação da Análise de Componentes Principais (PCA) &  & X & X &  &  \\
-Análise qualitativa e triangulação dos dados &  &  & X & X &  \\
-Interpretação dos resultados e discussão &  &  & X & X &  \\
-Redação das seções de Resultados e Discussão &  &  &  & X &  \\
-Redação das Considerações Finais &  &  &  & X &  \\
-Revisão geral e ajustes finais &  &  &  & X & X \\
-Preparação da apresentação e defesa &  &  &  &  & X \\
-\textbf{Entrega e Defesa do TCC~2} &  &  &  &  & \textbf{X} \\
-\bottomrule
-\end{tabular}
-}{
-\Fonte{Elaborado pelo autor (2026).}
-}
+Quanto à validade de conclusão, o tamanho reduzido da amostra, o efeito de teto e o valor modesto do KMO limitam o alcance das inferências; por isso a PCA é tratada como exploratória e as comparações empregam testes não-paramétricos com correção de Holm, que reduzem o risco de conclusões espúrias. Quanto à validade de construto, o uso de dados secundários, coletados por instrumentos não idênticos entre todos os estudos, exige harmonização das variáveis, um procedimento que deve ser devidamente documentado para possibilitar a verificação por outros pesquisadores. Cabe destacar que o primeiro estudo do conjunto não aplicou o instrumento quantitativo, contribuindo apenas com dados qualitativos. Quanto à validade interna, por se tratar de uma síntese de braço único, sem grupo de comparação controlado, não se formulam afirmações causais; as análises descrevem padrões de percepção, uso e adoção. Por fim, quanto à validade externa, a inclusão de coortes em contextos acadêmicos e industriais, presenciais e remotos, amplia a base de evidências, mas a generalização permanece circunscrita a cenários semelhantes aos estudados.
