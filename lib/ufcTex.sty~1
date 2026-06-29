@@ -758,7 +758,7 @@
 
 	\vspace{\onelineskip}
 		
-	\noindent Aprovada em: \imprimirdataaprovacao
+	%\noindent Aprovada em: % \imprimirdataaprovacao
 	
 	\vspace{\onelineskip}
 	
@@ -818,7 +818,7 @@
 
 	\vspace{\onelineskip}
 		
-	\noindent Aprovada em: \imprimirdataaprovacao
+	%\noindent Aprovada em:% \imprimirdataaprovacao
 	
 	\vspace{\onelineskip}
 	
@@ -879,7 +879,7 @@
 
 	\vspace{\onelineskip}
 		
-	\noindent Aprovada em: \imprimirdataaprovacao
+	%\noindent Aprovada em: % \imprimirdataaprovacao
 	
 	\vspace{\onelineskip}
 	
