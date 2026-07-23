@@ -28,13 +28,22 @@ O método USARP foi proposto por \citeonline{oliveirajr2020} com o objetivo de a
 
 Estudos subsequentes avaliaram o método em diferentes contextos, incluindo ambientes distribuídos, indicando benefícios relacionados à conscientização sobre usabilidade e à melhoria da qualidade das especificações produzidas \cite{marques2022}. A partir de um estudo exploratório conduzido em contexto acadêmico, no qual identificaram dificuldades na seleção das cartas, \citeonline{marquesfiori2023} consolidaram uma evolução do método, com a revisão das cartas e a proposta de um \textit{checklist} e de um quadro de seleção que orientam a escolha das cartas mais adequadas a cada conjunto de histórias de usuário. Ainda assim, esses estudos evidenciam variações na forma como os mecanismos do método são utilizados, bem como diferenças entre a percepção positiva e o uso relatado dos artefatos propostos.
 
-\section{Síntese Crítica e Posicionamento do Trabalho}
+\section{Sínteses Empíricas em Engenharia de Software}
+\label{sec:sinteses-empiricas}
 
-A análise dos trabalhos relacionados evidencia que, embora existam diversas propostas para incorporar usabilidade ao processo de Engenharia de Requisitos, ainda são limitadas as abordagens que investigam simultaneamente a elicitação e a especificação de requisitos de usabilidade em contextos ágeis, com base em evidências empíricas sistematizadas. Além disso, observa-se que a maioria dos estudos apresenta avaliações pontuais ou contextuais, sem uma síntese integrada das evidências disponíveis.
+Uma vez que este trabalho se caracteriza como uma síntese empírica, cabe examinar os trabalhos que adotam essa mesma natureza metodológica, e não apenas aqueles que compartilham o objeto de estudo. Essa comparação é o que permite situar a contribuição do presente trabalho na última coluna da Tabela \ref{tab:comparacao-trabalhos}.
 
 No campo da Engenharia de Software, a síntese de evidências por meio de revisões sistemáticas e estudos de mapeamento tem ganhado espaço como forma de organizar e interpretar o conhecimento produzido na área. \citeonline{kitchenham2009} destacam que, embora haja um crescimento na produção de revisões sistemáticas em Engenharia de Software, ainda existem desafios relacionados ao rigor metodológico e, especialmente, à forma como os resultados são sintetizados. \citeonline{cruzesdyba2010} complementam essa discussão ao mostrarem que uma parcela significativa das revisões analisadas não apresenta síntese propriamente dita, e que, entre as que apresentam, predominam abordagens narrativas ou temáticas. Esses autores defendem a ampliação do repertório de métodos de síntese para tornar as revisões mais úteis para a pesquisa e para a prática.
 
 Especificamente no domínio da usabilidade de software, \citeonline{almazroi2021} realizou um mapeamento sistemático com o objetivo de classificar os estudos existentes e identificar tendências e lacunas na literatura. Os resultados indicam a predominância de estudos de proposta e de avaliação, enquanto estudos de validação empírica ainda aparecem de forma mais limitada. Em conjunto, esses trabalhos mostram que a literatura da área ainda é marcada, em grande parte, por sínteses descritivas ou narrativas, voltadas a panoramas amplos de técnicas, temas e tendências.
+
+Cabe explicitar, contudo, que as sínteses existentes situam-se em dois extremos. De um lado, estudos de natureza metodológica ou terciária, como os de \citeonline{kitchenham2009} e \citeonline{cruzesdyba2010}, que tomam como objeto o próprio conjunto de revisões da área. De outro, mapeamentos sistemáticos amplos, como o de \citeonline{almazroi2021}, que classificam a literatura de usabilidade por temas e tendências. Em nenhum dos casos há agregação de evidências no nível do respondente sobre a aplicação de um método determinado.
+
+Essa ausência tem explicação metodológica e não decorre de omissão da literatura. Uma meta-análise, em sentido estrito, requer a combinação de tamanhos de efeito provenientes de estudos independentes e comparáveis, usualmente dotados de grupo de comparação \cite{kitchenham2009}. Os estudos sobre métodos de elicitação, incluindo os do USARP, avaliam a técnica de forma isolada, sem comparador e em número reduzido, o que impossibilita a estimação e a agregação de efeitos. Some-se a isso a heterogeneidade de instrumentos e desfechos entre estudos, que inviabiliza a comparabilidade exigida pelo procedimento. É precisamente por essa razão que este trabalho se define como uma síntese empírica, e não como meta-análise: em vez de agregar medidas resumidas por estudo, ele reúne os dados individuais dos respondentes em uma base única, estratégia recomendada quando tais dados estão disponíveis, por preservar a variabilidade intragrupo e permitir a estratificação por contexto e coorte \cite{cruzesdyba2010,hair2019}.
+
+\section{Síntese Crítica e Posicionamento do Trabalho}
+
+A análise dos trabalhos relacionados evidencia que, embora existam diversas propostas para incorporar usabilidade ao processo de Engenharia de Requisitos, ainda são limitadas as abordagens que investigam simultaneamente a elicitação e a especificação de requisitos de usabilidade em contextos ágeis, com base em evidências empíricas sistematizadas. Além disso, observa-se que a maioria dos estudos apresenta avaliações pontuais ou contextuais, sem uma síntese integrada das evidências disponíveis.
 
 Diferentemente dessas abordagens, o presente trabalho adota uma síntese híbrida, integrando análise estatística descritiva, redução de dimensionalidade por meio da Análise de Componentes Principais (PCA) e interpretação qualitativa dos resultados obtidos com o método USARP. Assim, enquanto os trabalhos relacionados oferecem um escopo mais amplo ou sínteses não quantitativas, este TCC focaliza evidências empíricas específicas do USARP de forma estatisticamente informada, aprofundando a análise de um método específico em contextos acadêmicos e industriais e destacando padrões de percepção e de avaliação ainda pouco explorados na literatura.
 
@@ -62,6 +71,9 @@ Choma et al. (2016)          & X &   & X & X & X &  \\
 Ferreira et al. (2018)       & X & X &   & X & X &  \\
 Oliveira et al. (2020)       & X & X & X & X & X &  \\
 Marques et al. (2023)        & X &   & X & X & X &  \\
+Kitchenham et al. (2009)     &   &   &   &   & X & X \\
+Cruzes e Dyb\aa{} (2010)      &   &   &   &   & X & X \\
+Almazroi (2021)              &   &   & X &   & X & X \\
 \textbf{Este trabalho}       & X & X & X & X & X & X \\
 \bottomrule
 \end{tabular}%
